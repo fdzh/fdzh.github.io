@@ -1,19 +1,18 @@
 # Site settings
 
-title: Powerful New Theme for GitHub Pages | OpenTheme.co
-tagline: Amazing Websites and Hybrid Apps. Speedily!
-email: sehgal.manav@gmail.com
-copyright: Manav Sehgal
-keywords: open theme, github pages, semantic ui, single page apps
+title: Fedora中文社区 | fdzh.org
+tagline: 首页
+email: ray@fdzh.org
+copyright: fdzh.org
+keywords: fedora,fedora linux,fedora中国,fedora中文,fedora 21,fedora 22,fedora中文社区
 
 description: > # this means to ignore newlines until "url:". One indent required.
-  Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
-
+  Fedora 是一款由全球社区爱好者构建的面向日常应用的快速、稳定、强大的操作系统。它可完全自由使用、学习和分享。 
 # the base hostname & protocol for your site
-url: "http://opentheme.co"
+url: "http://www.fdzh.org"
 
-twitter_username: manavsehgal
-github_username:  manavsehgal
+twitter_username: fdzhorg
+github_username:  fdzh
 
 default_image: /img/opentheme-workflow.png
 
@@ -61,7 +60,7 @@ google_map_height: 450            # Default map height. Width adjusts to contain
 # API Keys. PLEASE DO NOT USE THESE KEYS. Get your own at links in comments.
 
 google_api_key: "AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0" # https://code.google.com/apis/console/
-google_analytics_ua: "UA-57703915-1" # Google Analytics site specific id
+google_analytics_ua: "UA" # Google Analytics site specific id
 google_cse_id: "012558675018178618302:kw1_r8qgyqc" # Google Custom Search Engine unique id
 
 mapbox: "pk.eyJ1Ijoib3BlbnRoZW1lIiwiYSI6ImNIWC1LTUUifQ.vq4k3nfTeTtDAk7eLCrVAw"
