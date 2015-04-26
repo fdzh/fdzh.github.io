@@ -25,7 +25,7 @@ permalink: pretty # YYYY/MM/DD/page-title/index.html
 lsi: true # Lexical analysis (true) takes longer for higher quality
 # sass:
 #  style: :compressed
-paginate: 5
+
 
 # Exclude from Jekyll processing
 
