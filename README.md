@@ -1,5 +1,4 @@
 # OpenTheme
-
 Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
 
 View live demo and docs at http://opentheme.co 
