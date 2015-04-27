@@ -14,7 +14,7 @@ url: "http://www.fdzh.org"
 twitter_username: fdzhorg
 github_username:  fdzh
 
-default_image: /img/opentheme-workflow.png
+default_image: https://rj.revolvermaps.com/h/m/a/0/fff600/256/20/97vwhcovtet.png
 
 # Pre-processing
 
@@ -50,7 +50,7 @@ comments: disqus      # Switch disqus | facebook | none - comments. facebook = t
 
 # Embeds
 
-disqus_name: opentheme            # Your site name at Disqus
+disqus_name: fdzh           # Your site name at Disqus
 
 youtube_controls: 0               # Turn on=1/off=0 Youtube player features when embedding videos
 
@@ -66,13 +66,13 @@ google_cse_id: "012558675018178618302:kw1_r8qgyqc" # Google Custom Search Engine
 
 mapbox: "pk.eyJ1Ijoib3BlbnRoZW1lIiwiYSI6ImNIWC1LTUUifQ.vq4k3nfTeTtDAk7eLCrVAw"
 
-facebook_app: "390272554479803" # https://developers.facebook.com/
+#facebook_app: "390272554479803" # https://developers.facebook.com/
 
-mailchimp_u: "cf72d9276397b3175b874eb39" # Mailchimp u=unique identification
-mailchimp_id: "3a51637dcc" # Mailchip id
+mailchimp_u: "47617a7ddf39f5eb98420023a" # Mailchimp u=unique identification
+mailchimp_id: "e507ff23b2" # Mailchip id
 
-addthis_pubid: "ra-54a66cfa35915034" # Get your pubid at https://www.addthis.com/dashboard
+addthis_pubid: "ra-553dc3ee18abc43e" # Get your pubid at https://www.addthis.com/dashboard
 
 pingdom_rum: "54a97d8aabe53daf361855a6" # https://my.pingdom.com/dashboard. Real User experience (speed) monitoring.
 
-uservoice: "nvdgD40UtxnMoshpVHYxg"
+#uservoice: "nvdgD40UtxnMoshpVHYxg"
