@@ -25,6 +25,15 @@
     {% endif %}
 
     {% include js.html %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+  	</script>
     {% include embed-google-analytics.html %}
   </body>
 
