@@ -1,7 +1,7 @@
 {% for post in site.posts %}
     {% if post.tags %}
       {% for tag in post.tags %}
-        {% if tag == 'offical' %}
+        {% if tag == 'official' %}
           <div>
             <a href="{{ post.url }}">
               <h3 class="ui inverted header">{{post.title}}</h3>
