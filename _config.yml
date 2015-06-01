@@ -62,7 +62,7 @@ google_map_height: 450            # Default map height. Width adjusts to contain
 
 google_api_key: "AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0" # https://code.google.com/apis/console/
 google_analytics_ua: "UA" # Google Analytics site specific id
-google_cse_id: "012558675018178618302:kw1_r8qgyqc" # Google Custom Search Engine unique id
+google_cse_id: "010549876619188742396:jfqeoiawpvi" # Google Custom Search Engine unique id
 
 mapbox: "pk.eyJ1Ijoib3BlbnRoZW1lIiwiYSI6ImNIWC1LTUUifQ.vq4k3nfTeTtDAk7eLCrVAw"
 
