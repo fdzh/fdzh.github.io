@@ -10,7 +10,7 @@
     <a class="item menu-details {% if page.title == 'Embeds' %}active{% endif %}" href="http://ppt.fdzh.org" target="_blank" data-position="bottom left" data-content="For Teacher"><i class="wizard icon"></i>PPT</a>
     <div class="item">
       <div class="ui transparent mini icon input">
-        <input type="text" placeholder="Search..." class="menu-search">
+        <form onsubmit="return google()" _lpchecked="1"><input type="text" placeholder="Search..." maxlength="40" name="q" id="q" value=""></form>
         <i class="search link icon"></i>
       </div>
     </div>
