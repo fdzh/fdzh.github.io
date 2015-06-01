@@ -10,16 +10,20 @@ description: Search OpenTheme content using Google Custom Search Engine.
       <div class="column">
         {% if site.google_cse_id %}
         <script>
-          (function() {
-            var cx = '{{ site.google_cse_id }}';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = (document.location.protocol == ' http:') +
-                '//utfg.ml/cse/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
+          function google() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'http://utfg.ml/search?q=site:fdzh.org ' + q.value;
+        if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
+            location.href = url;
+        } else {
+            window.open(url, "_blank");
+        }
+        return false;
+    } else {
+        return false;
+    }
+}
         </script>
         <gcse:searchresults-only></gcse:searchresults-only>
         {% endif %}
