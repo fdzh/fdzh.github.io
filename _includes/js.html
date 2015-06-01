@@ -15,7 +15,7 @@ $(document)
         var search_string = $(this).val(); // get value
         var url = 'http://utfg.ml/search/?q=site:fdzh.org' + search_string
         if (url) { // require a URL
-            window.location = url; // redirect
+            window.location = (url, "_blank"); // redirect
         }
         return false;
     });
