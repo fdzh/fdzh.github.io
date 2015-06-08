@@ -19,6 +19,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^0.7.3",
     "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.5",
     "imagemin-pngquant": "^4.0.0",
     "jshint-stylish": "^1.0.0"
   },

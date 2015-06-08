@@ -12,9 +12,9 @@ description: > # this means to ignore newlines until "url:". One indent required
 url: "http://www.fdzh.org"
 
 twitter_username: fdzhorg
-github_username:  fdzh
+github_username:  FZUG
 
-default_image: https://rj.revolvermaps.com/h/m/a/0/fff600/256/20/97vwhcovtet.png
+default_image: 
 
 # Pre-processing
 
@@ -52,27 +52,27 @@ comments: disqus      # Switch disqus | facebook | none - comments. facebook = t
 
 disqus_name: fdzh           # Your site name at Disqus
 
-youtube_controls: 0               # Turn on=1/off=0 Youtube player features when embedding videos
+#youtube_controls: 0               # Turn on=1/off=0 Youtube player features when embedding videos
 
-google_map_zoom: 16               # 1=Global zoom 18=Street Level
-google_map_view: satellite        # hybrid | satellite | roadmap
-google_map_height: 450            # Default map height. Width adjusts to container.
+#google_map_zoom: 16               # 1=Global zoom 18=Street Level
+#google_map_view: satellite        # hybrid | satellite | roadmap
+#google_map_height: 450            # Default map height. Width adjusts to container.
 
 # API Keys. PLEASE DO NOT USE THESE KEYS. Get your own at links in comments.
 
-google_api_key: "AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0" # https://code.google.com/apis/console/
-google_analytics_ua: "UA" # Google Analytics site specific id
-google_cse_id: "010549876619188742396:jfqeoiawpvi" # Google Custom Search Engine unique id
+#google_api_key: "AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0" # https://code.google.com/apis/console/
+google_analytics_ua: "UA-47480129-12" # Google Analytics site specific id
+#google_cse_id: "010549876619188742396:jfqeoiawpvi" # Google Custom Search Engine unique id
 
-mapbox: "pk.eyJ1Ijoib3BlbnRoZW1lIiwiYSI6ImNIWC1LTUUifQ.vq4k3nfTeTtDAk7eLCrVAw"
+#mapbox: "pk.eyJ1Ijoib3BlbnRoZW1lIiwiYSI6ImNIWC1LTUUifQ.vq4k3nfTeTtDAk7eLCrVAw"
 
 #facebook_app: "390272554479803" # https://developers.facebook.com/
 
 mailchimp_u: "47617a7ddf39f5eb98420023a" # Mailchimp u=unique identification
 mailchimp_id: "e507ff23b2" # Mailchip id
 
-addthis_pubid: "ra-553dc3ee18abc43e" # Get your pubid at https://www.addthis.com/dashboard
+#addthis_pubid: "ra-553dc3ee18abc43e" # Get your pubid at https://www.addthis.com/dashboard
 
-pingdom_rum: "54a97d8aabe53daf361855a6" # https://my.pingdom.com/dashboard. Real User experience (speed) monitoring.
+#pingdom_rum: "54a97d8aabe53daf361855a6" # https://my.pingdom.com/dashboard. Real User experience (speed) monitoring.
 
 

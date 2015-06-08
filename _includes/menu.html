@@ -2,21 +2,18 @@
   <a class="header item" href="/">Home</a>
   <div class="right menu">
     <a class="item menu-details {% if page.title == 'Metrics' %}active{% endif %}" href="http://hack.fdzh.org" target="_blank" data-position="bottom left" data-content="For Hacker"><i class="users icon"></i>Hack</a>
-     <a class="item menu-details {% if page.title == 'Metrics' %}active{% endif %}" href="http://hack.fdzh.org" target="_blank" data-position="bottom left" data-content="For Asker"><i class="help icon"></i>Ask</a>
     <a class="item menu-details {% if page.title == 'Blog' %}active{% endif %}" href="/blog/"  data-position="bottom left" data-content="For Blogger"><i class="idea icon"></i>Blog</a>
     <a class="item menu-details {% if page.title == 'Apps' %}active{% endif %}" href="http://repo.fdzh.org" target="_blank" data-position="bottom left" data-content="For User"><i class="shop icon"></i>Repo</a>
     <a class="item menu-details {% if page.title == 'Apps' %}active{% endif %}" href="https://copr.fdzh.org" target="_blank" data-position="bottom left" data-content="For Packager"><i class="cloud icon"></i>Copr</a>
     <a class="item menu-details {% if page.title == 'Embeds' %}active{% endif %}" href="http://p.fdzh.org" target="_blank" data-position="bottom left" data-content="For Coder"><i class="write square icon"></i>Paste</a>
     <a class="item menu-details {% if page.title == 'Embeds' %}active{% endif %}" href="http://ppt.fdzh.org" target="_blank" data-position="bottom left" data-content="For Teacher"><i class="wizard icon"></i>PPT</a>
+    
     <div class="item">
       <div class="ui transparent mini icon input">
         <form onsubmit="return google()" _lpchecked="1"><input type="text" placeholder="Search..." maxlength="40" name="q" id="q" value=""></form>
-        <i class="search link icon"></i>
+        
       </div>
     </div>
-    {% if site.pagebar %}
-      <a class="mobile item pagebar" href="#"><i class="icon content"></i></a>
-      <a class="item pagebar" href="#"><i class="icon content"></i></a>
-    {% endif %}
+
   </div>
 </div>
