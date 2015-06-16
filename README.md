@@ -1,11 +1,9 @@
-gul# OpenTheme
-Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
+# Fedora中文社区网站
+基于 [OpenTheme](http://opentheme.co)
 
-View live demo and docs at http://opentheme.co 
+### 投稿指南
 
-<a href="https://travis-ci.org/open-start/opentheme"><img src="https://travis-ci.org/open-start/opentheme.svg" alt="Travis Build Status"></a>
-<!-- <a href="https://codeclimate.com/github/open-start/opentheme"><img src="https://codeclimate.com/github/open-start/opentheme/badges/gpa.svg" /></a> -->
-
+参见[Wiki](https://github.com/FZUG/fzug.github.io/wiki)
 
 ## Getting Started
 
@@ -14,12 +12,7 @@ View live demo and docs at http://opentheme.co
 1. Fork OpenTheme as your own repo
 2. IMPORTANT: Edit _config.yml -> "API Keys" section to replace OpenTheme keys with your own
 3. Edit and publish _posts, or _data, or pages directly from GitHub
-### 提交文章
-blog
 
-top 置顶
-
-slides 置顶
 
 ### Local Setup
 
