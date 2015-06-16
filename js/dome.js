@@ -251,16 +251,34 @@ var what_fedora_is_for = function() {
 
     typist
         .pause(1000).delete(initialText.length)
-        .type('稳定').pause(pause).delete(2)
-        .type('强大').pause(pause).delete(2)
-        .type('自由').pause(pause).delete(2)
-        .type('友好').pause(pause).delete(2)
-        .type('领先').pause(pause).delete(2)
-        .type('快速').pause(1200)
+        .type('更加稳定').pause(pause).delete(4)
+        .type('更加强大').pause(pause).delete(4)
+        .type('更加自由').pause(pause).delete(4)
+        .type('更加友好').pause(pause).delete(4)
+        .type('更加领先').pause(pause).delete(4)
+        .type('更加快速').pause(pause).delete(4)
+        .type('更少配置').pause(pause).delete(4)
+        .type('更多创新').pause(pause).delete(4)
+        .type('足以满足你的想象').pause(8)
         .call(function() {
             $(el).addClass("disabled")
         });
 }
 
 $(what_fedora_is_for);
+
+function google() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'http://guge.work/search?q=site:fdzh.org ' + q.value;
+        if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
+            location.href = url;
+        } else {
+            window.open(url, "_blank");
+        }
+        return false;
+    } else {
+        return false;
+    }
+}
    
