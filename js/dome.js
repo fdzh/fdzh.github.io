@@ -1,28 +1,10 @@
+$(document).ready(function() {
+  $('#particles').particleground({
+    dotColor: '#5cbdaa',
+    lineColor: '#5cbdaa'
+  });
+});
 
-<!-- Cannot make async calls for jQuery or Semantic. Breaks Cards, Page Bar, others. -->
-<script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
-<script src="//dn-fdzhcdn.qbox.me/semantic.min.js"></script>
-<script src="//cdn-bootcss-com.b0.upaiyun.com/jquery/1.11.1/jquery.min.js"></script>
- <script type='text/javascript' src='/js/jquery.particleground.min.js'></script>
- <script type='text/javascript' src='/js/dome.js'></script>
-<script language=javascript>
-function google() {
-    var q = document.getElementById("q");
-    if (q.value != "") {
-        var url = 'http://guge.work/search?q=site:fdzh.org ' + q.value;
-        if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
-            location.href = url;
-        } else {
-            window.open(url, "_blank");
-        }
-        return false;
-    } else {
-        return false;
-    }
-}
-</script>
-<!--以下是动态文字效果-->
-<script>
 'use strict';
 
 var aps = Array.prototype.slice;
@@ -269,95 +251,16 @@ var what_fedora_is_for = function() {
 
     typist
         .pause(1000).delete(initialText.length)
-        .type('稳定的操作系统').pause(pause).delete(7)
-        .type('强大的操作系统').pause(pause).delete(7)
-        .type('自由的操作系统').pause(pause).delete(7)
-        .type('友好的操作系统').pause(pause).delete(7)
-        .type('领先的操作系统').pause(pause).delete(7)
-        .type('快速的操作系统').pause(1200)
+        .type('稳定').pause(pause).delete(2)
+        .type('强大').pause(pause).delete(2)
+        .type('自由').pause(pause).delete(2)
+        .type('友好').pause(pause).delete(2)
+        .type('领先').pause(pause).delete(2)
+        .type('快速').pause(1200)
         .call(function() {
             $(el).addClass("disabled")
         });
 }
 
 $(what_fedora_is_for);
-$(document)
-  .ready(function() {
-
-/*******************************
-    
-*******************************/
-
    
-
-/*******************************
-          Cards
-
-
-
-    $('.special.cards .image').dimmer({
-      on: 'hover'
-    });
-    
-    $('.ui.rating')
-      .rating({
-        maxRating: 5
-      });
-
-    $('.ui.rating')
-      .rating('disable');
-      
-    $('.embed-features')
-      .popup();
-
-    $('.menu-details')
-      .popup();
-
-});  
-</script>
-*******************************/
-{% if site.uservoice %}
-<script>
-// Include the UserVoice JavaScript SDK (only needed once on a page)
-UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/{{ site.uservoice }}.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-//
-// UserVoice Javascript SDK developer documentation:
-// https://www.uservoice.com/o/javascript-sdk
-//
-
-// Set colors
-UserVoice.push(['set', {
-  accent_color: '#448dd6',
-  trigger_color: 'white',
-  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-}]);
-
-// Identify the user and pass traits
-// To enable, replace sample data with actual user traits and uncomment the line
-UserVoice.push(['identify', {
-  //email:      'john.doe@example.com', // User’s email address
-  //name:       'John Doe', // User’s real name
-  //created_at: 1364406966, // Unix timestamp for the date the user signed up
-  //id:         123, // Optional: Unique id of the user (if set, this should not change)
-  //type:       'Owner', // Optional: segment your users by type
-  //account: {
-  //  id:           123, // Optional: associate multiple users with a single account
-  //  name:         'Acme, Co.', // Account name
-  //  created_at:   1364406966, // Unix timestamp for the date the account was created
-  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-  //  ltv:          1495.00, // Decimal; lifetime value of the account
-  //  plan:         'Enhanced' // Plan name for the account
-  //}
-}]);
-
-// Add default trigger to the bottom-right corner of the window:
-UserVoice.push(['addTrigger', { mode: 'smartvote', trigger_position: 'bottom-right' }]);
-
-// Or, use your own custom trigger:
-//UserVoice.push(['addTrigger', '#id', { mode: 'smartvote' }]);
-
-// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-UserVoice.push(['autoprompt', {}]);
-</script>
-{% endif %}

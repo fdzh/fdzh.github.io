@@ -3,7 +3,7 @@ $('.percent').progress();
 // ====== PageSpeed API - Desktop =====
 
 // Specify your actual API key here:
-var API_KEY = 'AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0';
+var API_KEY = '';
 
 // Specify the URL you want PageSpeed results for here:
 var URL_TO_GET_RESULTS_FOR = 'http://opentheme.co/';
@@ -34,7 +34,7 @@ function runPagespeedCallbacks(result) {
   if (result.error) {
     var errors = result.error.errors;
     for (var i = 0, len = errors.length; i < len; ++i) {
-      if (errors[i].reason == 'badRequest' && API_KEY == 'AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0') {
+      if (errors[i].reason == 'badRequest' && API_KEY == '') {
         alert('Please specify your Google API key in the API_KEY variable.');
       } else {
         // NOTE: your real production app should use a better
@@ -115,7 +115,7 @@ function runPagespeedCallbacks_m(result) {
   if (result.error) {
     var errors = result.error.errors;
     for (var i = 0, len = errors.length; i < len; ++i) {
-      if (errors[i].reason == 'badRequest' && API_KEY == 'AIzaSyDmt_iRsE8kQ1glUPC2GZpNLBsw1Laj9_0') {
+      if (errors[i].reason == 'badRequest' && API_KEY == '') {
         alert('Please specify your Google API key in the API_KEY variable.');
       } else {
         // NOTE: your real production app should use a better

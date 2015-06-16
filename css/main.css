@@ -114,11 +114,11 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1em; }
 
 .global .vertical.segment {
-  padding: 2rem 0; }
+  padding: 3rem 0; }
 
 .global .feature.segment {
   margin: 0;
-  padding: 2rem 0; }
+  padding: 3rem 0; }
 
 .global .feature.segment p {
   min-height: 50px; }
