@@ -4,7 +4,7 @@ author: tvvocold
 category: slides 
 title:  Fedora 中文社区软件源发布+福利第三波             
 tags: repo           
-image: http://pic.fdzh.org/uploads/2015/06/20150608001953.png
+image: http://fdorg.qiniudn.com/20150608001953.png
 ---
 
 
