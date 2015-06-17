@@ -11,3 +11,9 @@ AddOutputFilterByType DEFLATE application/xhtml+xml
 AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
+
+Redirect 301 /fedora-22 http://www.fdzh.org/slides/2015/05/26/fedora-22/
+Redirect 301 /fedora-zhong-wen-she-qu-ruan-jian-yuan-fa-bu-fu-li-di-san-bo http://www.fdzh.org/slides/2015/05/15/repo-ucloud/
+Redirect 301 /copr http://www.fdzh.org/slides/2015/03/27/copr-ucloud/
+Redirect 301 /42 http://www.fdzh.org/slides/2015/06/01/f6a/
+Redirect 301 /f21-party/ http://www.fdzh.org/blog/2015/01/17/fedora-21-beijing/
