@@ -4,7 +4,7 @@ author: tvvocold
 category: slides 
 title:  Fedora 社区 Copr 开启公测+福利第二波         
 tags: copr              
-image: http://pic.fdzh.org/uploads/2015/06/20150608002126.png
+image: http://fdorg.qiniudn.com/20150608002126.png
 ---
 
 Hi All!
