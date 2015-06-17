@@ -1,6 +1,6 @@
 ---
 layout: post
-author: tvvocold
+author: alick
 category: blog 
 title:  Fedora 21 发行派对北京站       
 tags: fedora-21 party             
