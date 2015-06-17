@@ -3,7 +3,7 @@
 
 ### 投稿指南
 
-参见[Wiki](https://github.com/FZUG/fzug.github.io/wiki)
+参见 [Wiki](https://github.com/FZUG/fzug.github.io/wiki)
 
 ## Getting Started
 
