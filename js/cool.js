@@ -251,15 +251,11 @@ var what_fedora_is_for = function() {
 
     typist
         .pause(1000).delete(initialText.length)
-        .type('更加稳定').pause(pause).delete(4)
-        .type('更加强大').pause(pause).delete(4)
         .type('更加自由').pause(pause).delete(4)
         .type('更加友好').pause(pause).delete(4)
+        .type('更加强大').pause(pause).delete(4)
         .type('更加领先').pause(pause).delete(4)
-        .type('更加快速').pause(pause).delete(4)
-        .type('更少配置').pause(pause).delete(4)
-        .type('更多创新').pause(pause).delete(4)
-        .type('足以满足你的想象').pause(8)
+        .type('中文社区').pause(8)
         .call(function() {
             $(el).addClass("disabled")
         });
