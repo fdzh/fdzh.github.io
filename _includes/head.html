@@ -19,7 +19,7 @@
     {% capture title_tag %}{{ page.title }}{% endcapture %}
   {% endif %}
   
-  <title>Fedora中文社区</title>
+  <title>{{ title_tag }} &middot; - Fedora中文社区</title>
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
