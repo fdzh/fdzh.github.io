@@ -23,4 +23,4 @@ SUSE, SUSE Linux Enterprise Server (SLES), 和openSUSE 之间的关系类似于 
 
 Debian是包括Ubuntu在内许多发行版的上游，而Ubuntu又是Linux Mint及其他发行版的上游。Debian在服务器和桌面电脑领域都有着广泛的应用。Debian是一个纯开源计划并着重在一个关键点上，稳定性。它同时也提供了最大的和完整的软件仓库给用户。
 
-转载请注明来源: [Linux 基金会制作的 Linux 入门教程翻译项目](https://github.com/fdzh/LFS101x)
+转载请注明来源: [Linux 入门教程翻译项目](https://github.com/fdzh/LFS101x)
