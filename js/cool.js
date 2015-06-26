@@ -266,7 +266,7 @@ $(what_fedora_is_for);
 function google() {
     var q = document.getElementById("q");
     if (q.value != "") {
-        var url = 'http://guge.work/search?q=site:fdzh.org ' + q.value;
+        var url = 'http://utfg.ml/search?q=site:fdzh.org ' + q.value;
         if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
             location.href = url;
         } else {
