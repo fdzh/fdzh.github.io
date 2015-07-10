@@ -13,7 +13,9 @@ image: http://7o51u6.com1.z0.glb.clouddn.com/1295684929_ddvip_2818.png
 
 2，进入Fedora ISO文件所在的目录，如
 
-`> $ cd $HOME\Downloads\`
+{% raw  %}
+> $ cd $HOME\Downloads\
+{% endraw  %}
 
 3，按顺序运行以下命令:
 
