@@ -9,7 +9,7 @@ image: http://7o51u6.com1.z0.glb.clouddn.com/1295684929_ddvip_2818.png
 
 在准备安装 Fedora 22 前，对下载的 ISO 安装文件进行校验是很有必要的。下面我们进行对 Fedora 22（64bit) ISO 文件的校验。
 
-1, 点击开始 > 运行 > cmd，输入 PowerShell 进入 Windows PowerShell
+1, 点击 开始 > 运行 > cmd，输入 PowerShell 进入 Windows PowerShell
 
 2，进入Fedora ISO文件所在的目录，如
 
