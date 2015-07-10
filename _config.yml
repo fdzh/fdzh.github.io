@@ -71,7 +71,7 @@ google_analytics_ua: "UA-47480129-12" # Google Analytics site specific id
 mailchimp_u: "47617a7ddf39f5eb98420023a" # Mailchimp u=unique identification
 mailchimp_id: "e507ff23b2" # Mailchip id
 
-#addthis_pubid: "ra-553dc3ee18abc43e" # Get your pubid at https://www.addthis.com/dashboard
+addthis_pubid: "ra-553dc3ee18abc43e" # Get your pubid at https://www.addthis.com/dashboard
 
 #pingdom_rum: "54a97d8aabe53daf361855a6" # https://my.pingdom.com/dashboard. Real User experience (speed) monitoring.
 
