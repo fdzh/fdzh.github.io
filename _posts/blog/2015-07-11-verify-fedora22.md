@@ -21,7 +21,13 @@ image: http://7o51u6.com1.z0.glb.clouddn.com/1295684929_ddvip_2818.png
 
 3，按顺序运行以下命令:
 
-`> $image = "Fedora-Live-Workstation-x86_64-22-3.iso" `
+{% gist 42b382c07b3848c09aab %}
+
+{% highlight bash %}
+{% raw  %}
+> $image = "Fedora-Live-Workstation-x86_64-22-3.iso" 
+{% endraw  %}
+{% endhighlight %}
 
 （请注意这里笔者以自己的 iso 文件为例，如果您下载了其他版本的 Fedora，请自行修改文件名）
 
