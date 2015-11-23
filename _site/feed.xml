@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fdzh.org</title>
+    <description></description>
+    <link>http://www.fdzh.org/</link>
+    <atom:link href="http://www.fdzh.org/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 22 Nov 2015 01:17:56 +0800</pubDate>
+    <lastBuildDate>Sun, 22 Nov 2015 01:17:56 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>迟到的万圣节大餐 － Fedora 23 正式发布！</title>
+        <description>&lt;p&gt;美国东部时间 2015 年 11 月 3 日 10 时，北京时间 11 月 3 日 23 时， Fedora Project 宣布 Fedora 23 正式发布，同时开放下载并可以由旧版本升级。这有可能是史上最好用的 Fedora ，三个主要的 Fedora 子版本都同时带来了最新的特性。&lt;/p&gt;
+
+&lt;p&gt;对于 Fedora Project 的 Matthew Miller 来说，这次 Fedora 23 的发布周期中有不少意外的惊喜：“我们差一点就赶上本来预定的万圣节日期了，那样的话就能给大家再一个惊喜了”。至于为什么会有延期， Miller 解释道， Fedora 的开发是一个混合的模式，一个是严格基于日期的模式，一个是根据功能是否就绪来定的模式，自从 Fedora 从上游集成了越来越多不是自己能控制的开源项目及以来，让时间变得精确就越来越困难了，虽然 Fedora 也很希望能准时发布。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“我们在开发过程中不断修正我们最终的发布时间，同时在每一个重要时间节点前进行再确认”，Miller 说“通常来说，我们都能预估到可能会有延误，也会把它加入到我们的考量中”。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果你早早就关注了 Fedora 23，想直接安装，不要犹豫马上来这里下载吧，官方下载地址：&lt;a href=&quot;https://getfedora.org&quot;&gt;https://getfedora.org&lt;/a&gt;，中国用户也可以使用 &lt;a href=&quot;http://mirrors.linuxstory.org&quot;&gt;Linux Story 的镜像下载&lt;/a&gt;，如果你已经在使用旧版本的 Fedora，请阅读 &lt;a href=&quot;http://hack.fdzh.org/item?id=1097&quot;&gt;使用 dnf 升级到 Fedora 23 的方法&lt;/a&gt; 。&lt;/p&gt;
+
+&lt;h4 id=&quot;fedora-23-&quot;&gt;Fedora 23 新特性：&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;利用编译器标志提高安全性，通过 &lt;a href=&quot;https://fedoraproject.org/wiki/Changes/Harden_All_Packages&quot;&gt;hardening&lt;/a&gt; 避免进程发生内存泄露，缓冲区溢出等问题&lt;/li&gt;
+  &lt;li&gt;禁用存在漏洞的 SSL3, RC4 协议&lt;/li&gt;
+  &lt;li&gt;支持最新的 &lt;a href=&quot;https://fedoraproject.org/wiki/Changes/Mono_4&quot;&gt;Mono 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;使用 &lt;a href=&quot;https://fedoraproject.org/wiki/Changes/Python_3_as_Default&quot;&gt;Python 3&lt;/a&gt; 作为默认版本&lt;/li&gt;
+  &lt;li&gt;使用 CIL 编译器编译 SELinux 策略模块，使模块占用资源更少，载入更快&lt;/li&gt;
+  &lt;li&gt;支持 Unicode 8.0，并添加新的 emojis&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.gnome.org/misc/release-notes/3.18/&quot;&gt;GNOME 3.18&lt;/a&gt;：更新文件管理器，新的 Calendar 和 Todo 应用&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.libreoffice.org/discover/new-features/&quot;&gt;LibreOffice 5&lt;/a&gt;：HiDPI 支持，UI 更新&lt;/li&gt;
+  &lt;li&gt;Builder IDE：基于 LLVM 的代码检查，自动补全&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.fwupd.org/&quot;&gt;Firmware 更新&lt;/a&gt;：允许更新固件&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wayland.freedesktop.org/&quot;&gt;Wayland&lt;/a&gt;：计划在 Fedora 24 使用 Wayland 作为默认 X Server&lt;/li&gt;
+  &lt;li&gt;添加 Cinnamon 桌面环境&lt;/li&gt;
+  &lt;li&gt;更多请参阅 &lt;a href=&quot;https://docs.fedoraproject.org/en-US/Fedora/23/html/Release_Notes/index.html&quot;&gt;Fedora 23 Release Note&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dn-copr.qbox.me/workstation-logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你是一名软件开发者，笔记本电脑用户，家庭用户，业余爱好者，或学生，&lt;a href=&quot;https://getfedora.org/workstation&quot;&gt;Fedora Workstation&lt;/a&gt; 应该是最适合你的版本。Fedora Workstation 包括最新的 &lt;a href=&quot;https://www.gnome.org/gnome-3/&quot;&gt;GNOME&lt;/a&gt; 桌面环境，可以满足每天的日常使用，简单方便，轻松舒适。体验漂亮好用的界面和功能强大的工具。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dn-copr.qbox.me/server-logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;通过 &lt;a href=&quot;https://github.com/libre-server/rolekit&quot;&gt;RoleKit&lt;/a&gt; 工具，Fedora Server 可以使我们的服务管理更加简单，一个程序化的界面可以方便地进行快速部署，同时还有 &lt;a href=&quot;http://cockpit-project.org/&quot;&gt;Cockpit&lt;/a&gt; 这个远程网络管理界面。在 Fedora Server 23 中，你可以通过 Cockpit Admin Console 轻松管理 &lt;a href=&quot;http://kubernetes.io/&quot;&gt;Kubernetes&lt;/a&gt; 集群，也可以轻松的使用 kickstart 部署 FreeIPA 域控。所有的这些你都可以通过下载最新 &lt;a href=&quot;https://getfedora.org/server&quot;&gt;Fedora Server 23&lt;/a&gt; 镜像马上拥有。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dn-copr.qbox.me/cloud-logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;通过 Fedora Cloud 构建可扩展的弹性云绝对是个好主意，Fedora Cloud Base 镜像提供了一个最小化的操作系统平台，可方便的用于 OpenStack，或者直接在 EC2 上部署。Fedora Atomic Host 提供了一个特别定制的系统来运行 Docker 容器和 Atomic Apps，解决问题更加直接和彻底。在 Fedora Cloud 23，Fedora Atomic Host 将会每两周保持更新一次，以保证用户获得最新的稳定技术。现在立即为你的私有云和 Vagrant box 下载 &lt;a href=&quot;https://getfedora.org/cloud/&quot;&gt;Fedora Cloud&lt;/a&gt; 镜像。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;感谢来自 &lt;a href=&quot;http://www.linuxstory.org&quot;&gt;Linux Story&lt;/a&gt; 的 Bootingman 带来的报道！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Wed, 04 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/11/04/fedora-23-released/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/11/04/fedora-23-released/</guid>
+        
+        <category>top</category>
+        
+        <category>fedora-23</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Fedora 安装后需要做的第一件事</title>
+        <description>&lt;p&gt;一直以来，Red Hat 系的许多教程，都会建议你关闭 SELinux。确实，启用 SELinux 可能会造成许多莫名其妙的错误。但在实际生产环境，甚至是用户工作站，Red Hat 都建议将 SELinux 设为 enforcing 模式，因为它在关键时候可以成为你系统安全的最后一道防线。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;程序是不可信的&lt;/h2&gt;
+
+&lt;p&gt;技术的发展日新月异，我们的系统安全却不容乐观。&lt;a href=&quot;http://www.wooyun.org&quot;&gt;wooyun.org&lt;/a&gt; 时不时爆出的各种漏洞，都在提醒我们 &lt;em&gt;程序总是存在缺陷的&lt;/em&gt;。&lt;/p&gt;
+
+&lt;p&gt;传统的操作系统采用 DAC 机制，它针对用户进行访问控制，系统会信任用户执行的所有程序，但往往用户&lt;strong&gt;无法判断&lt;/strong&gt;程序是否存在安全问题。&lt;/p&gt;
+
+&lt;p&gt;后来，出现了 MAC 机制，它以进程为访问控制的首要目标，通过规则严格限制程序运行时可以执行的系统调用。&lt;/p&gt;
+
+&lt;p&gt;另外，在保密级别较高的地方，根据资源的机密程度结合 MAC 又衍生出了 MLS 多级安全策略。&lt;/p&gt;
+
+&lt;p&gt;我们的主角 SELinux 是 MAC+MLS 的实现方案之一，它最初由 NSA 基于 flask 框架开发，目前主要由 Tresys 和 Red Hat 进行维护。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;用户与隐私&lt;/h2&gt;
+
+&lt;p&gt;自 1987 年 9 月 20 日，CANET 向世界发出第一封 E-mail 为标志，互联网正式进入中国大陆。截至 2015 年 6 月，我国网民已达到 6.68 亿人。随着网络的发展，隐私与安全一直是大受关注的话题。现在，随便什么应用/网站都需要注册，各种客户端都提供网络连接功能。在不知不觉中，你的联系人，朋友圈都展示在了网上。可以负责任的说，在互联网面前，我们每个人都没有隐私。&lt;/p&gt;
+
+&lt;p&gt;保护个人隐私是一个系统工程。它需要可信的硬件/固件，可信的操作系统，可信的应用程序，可信的网络环境，可信的用户。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;硬件方面：X86、Arm 体系就是事实的工业标准，但目前没有可信的第三方机构进行评估。&lt;/li&gt;
+  &lt;li&gt;系统方面：尽量使用开源操作系统，Open Source 可以确保系统没有恶意行为。
+    &lt;ul&gt;
+      &lt;li&gt;早在 1985 年，美国国防部公布了 &lt;a href=&quot;http://csrc.nist.gov/publications/history/dod85.pdf&quot;&gt;可信计算机系统评估标准&lt;/a&gt;，该标准将计算机系统分为 A(A1), B(B3 B2 B1), C(C2 C1), D(D1) 四个等级，共7个级别。没有 SELinux 的 Linux 和 Windows 一样都处于 C2 级别。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;应用程序：尽量使用开源软件，闭源软件或多或少都会侵犯用户隐私。&lt;/li&gt;
+  &lt;li&gt;网络方面：尽量不访问/注册来历不明的网站，尽量不使用公共 Wifi。事实上，个人无法控制运营商的行为。&lt;/li&gt;
+  &lt;li&gt;用户方面：用户对于隐私保护有最重要的作用。俗话说得好，“机器是死的，人是活的“。只有用户养成了良好的习惯，才能保护好隐私。切勿抱有”&lt;strong&gt;我的信息并没有什么卵用&lt;/strong&gt;“的侥幸心理。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;selinux-&quot;&gt;SELinux 与隐私保护&lt;/h2&gt;
+
+&lt;p&gt;SELinux 为系统提供了额外的一层保护，能够在一定程度上防止隐私泄露。这里提一下基本概念， SELinux 是基于标签的强制访问控制系统。所有系统资源都包含标签上下文，只有进程标签符合访问对象（文件/socket/dbus…）的标签，才允许进程访问该资源。而标签又关联了一系列角色（role），角色又关联了一系列 SELinux user。通过将 SELinux user 与 Linux user 关联，该用户就具有了这些标签。此时，用户执行的程序就都处于这些标签规则的限制范围了。&lt;/p&gt;
+
+&lt;p&gt;在 Fedora 中，默认用户关联 unconfined_t 标签，该标签是无限制的，相当于未启用 SELinux。这主要为了兼容性考虑，targeted 规则仅限制网络相关应用。Red Hat 建议用户关联非 unconfined_t 标签来提高安全性。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;配置账户映射 SELinux user&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo semanage login -a -s staff_u -r s0:c0.c1023 Jone&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;配置 sudo，指定需要转换的 ROLE/TYPE&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Jone ALL=(ALL) TYPE=unconfined_t ROLE=unconfined_r ALL&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/sudoers.d/Jone&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;对 home 目录重新进行标记，并重启&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;restorecon -R -v /home/Jone&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;现在你的登陆 shell 就是以 staff_u 用户运行&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;id -Z
+staff_u:staff_r:staff_t:s0-s0:c0.c1023&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;如果你需要执行系统管理操作，可使用 sudo 进行提权，这和原来一模一样&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo id -Z
+staff_u:unconfined_r:unconfined_t:s0-s0:c0.c1023&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;广告&lt;/h2&gt;
+
+&lt;p&gt;最后，插播广告。Fedora 社区源正在使用 SELinux 加固软件，目前已完成了 sogoupinyin。&lt;/p&gt;
+
+&lt;p&gt;安装 sogoupinyin SELinux 模块，禁止 sogou 访问网络：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf install sogoupinyin sogoupinyin-selinux
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo setsebool -P &lt;span class=&quot;nv&quot;&gt;sogou_access_network&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://csrc.nist.gov/publications/history/dod85.pdf&quot;&gt;TCSEC, Trusted Computer System Evaluation Criteria&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://selinuxproject.org&quot;&gt;SELinux Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cm.fdzh.org/2015/10/31/2015-11-1-first-thing-after-installation-of-Fedora/&quot;&gt;原文: Fedora 安装后需要做的第一件事&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;感谢 &lt;a href=&quot;http://cm.fdzh.org&quot;&gt;1dot75cm&lt;/a&gt;, 转载请注明出处。&lt;/p&gt;
+
+&lt;p&gt;– EOF –&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/11/01/first-thing-after-installation-of-Fedora/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/11/01/first-thing-after-installation-of-Fedora/</guid>
+        
+        <category>Fedora</category>
+        
+        <category>SELinux</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Fedora 安装搜狗输入法</title>
+        <description>&lt;p&gt;经过开发和测试同学的辛勤劳动，搜狗输入法 For Linux 近日发布了 &lt;a href=&quot;http://pinyin.sogou.com/linux/changelog.php&quot;&gt;2.0.0.0066&lt;/a&gt; 更新： &lt;/p&gt;
+
+&lt;p&gt;新增双拼支持；
+修复少数情况下焦点跳动问题；
+改进部分桌面环境兼容性；
+修复新建覆盖词库不生效问题；
+调整tab切换界面控件顺序。&lt;/p&gt;
+
+&lt;p&gt;下面我们在 Fedora 22 上安装搜狗输入法。&lt;/p&gt;
+
+&lt;p&gt;1, 安装 Fedora 中文社区软件源&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf config-manager --add-repo&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;http://repo.fdzh.org/FZUG/FZUG.repo 
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf install fzug-release -y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;2, 安装搜狗拼音输入法 Linux 版&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf install sogoupinyin sogoupinyin-selinux -y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;3, 重启&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;reboot&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;感谢 &lt;a href=&quot;http://cm.fdzh.org&quot;&gt;1dot75cm&lt;/a&gt; 为 &lt;a href=&quot;http://repo.fdzh.org&quot;&gt;Fedora中文社区软件源&lt;/a&gt; 打包了该软件。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/10/18/fedora-sougoupinyin/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/10/18/fedora-sougoupinyin/</guid>
+        
+        <category>Fedora</category>
+        
+        <category>sougoupinyin</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Fedora &amp;&amp; Arch - 最浪漫的事现已发生...</title>
+        <description>&lt;p&gt;在&lt;a href=&quot;https://github.com/FZUG/repo/commit/d88fa4919ca99237b19000ede9b42f5c4de940b6&quot;&gt;丘比特&lt;/a&gt;的帮助下，Fedora 和 Arch “相爱” 了。这是他们的第一个“结晶”， Yaourt！&lt;/p&gt;
+
+&lt;h2 id=&quot;yaourt&quot;&gt;0.什么是 Yaourt？&lt;/h2&gt;
+
+&lt;p&gt;Yaourt 是一款基于 Pacman 的 Archlinux 包管理工具，采用 Bash 编写。&lt;br /&gt;
+现在，Fedora 用户可以方便的使用 Yaourt 安装 AUR 中的软件。&lt;/p&gt;
+
+&lt;h3 id=&quot;yaourt-&quot;&gt;Yaourt 特点&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;支持 AUR&lt;/li&gt;
+  &lt;li&gt;交互式搜索/安装&lt;/li&gt;
+  &lt;li&gt;支持从 ABS 源码构建软件包&lt;/li&gt;
+  &lt;li&gt;可处理备份文件： .pac*&lt;/li&gt;
+  &lt;li&gt;保存，恢复 alpm 数据库。支持查询备份文件&lt;/li&gt;
+  &lt;li&gt;搜索孤儿包并测试本地数据库&lt;/li&gt;
+  &lt;li&gt;支持分裂包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;yaourt-1&quot;&gt;1.安装 yaourt&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/FZUG/repo/wiki/FZUG&quot;&gt;添加 FZUG 源&lt;/a&gt;后，使用以下命令进行安装：   &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dnf install yaourt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;yaourtpacman&quot;&gt;2.配置 yaourt/pacman&lt;/h2&gt;
+
+&lt;p&gt;配置 pacman 在隔离的环境中安装包：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;vim /etc/pacman.conf
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;options&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RootDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/arch/         &lt;span class=&quot;c&quot;&gt;# 包安装的根目录，重要！！！&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;DBPath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /var/lib/pacman/
+&lt;span class=&quot;nv&quot;&gt;LogFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /var/log/pacman.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;archlinux--corecommunitymultilibextra-&quot;&gt;添加 Archlinux 的 Core、Community、Multilib、Extra 源信息&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;core&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;SigLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Optional TrustedOnly
+&lt;span class=&quot;nv&quot;&gt;Include&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /etc/pacman.d/mirrorlist
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;community&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;SigLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Never
+&lt;span class=&quot;nv&quot;&gt;Include&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /etc/pacman.d/mirrorlist
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;multilib&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;SigLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Never
+&lt;span class=&quot;nv&quot;&gt;Include&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /etc/pacman.d/mirrorlist
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;extra&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;SigLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Never
+&lt;span class=&quot;nv&quot;&gt;Include&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /etc/pacman.d/mirrorlist
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;archlinuxfr&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;SigLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Optional TrustedOnly
+&lt;span class=&quot;nv&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; http://repo.archlinux.fr/&lt;span class=&quot;nv&quot;&gt;$arch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;同步源信息：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pacman -Sy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;3.安装&lt;/h2&gt;
+
+&lt;p&gt;示例：以安装 ppsspp 为例，对 yaourt 的操作进行说明。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yaourt -Sdd ppsspp  &lt;span class=&quot;c&quot;&gt;# 跳过所有依赖检查，并安装 ppsspp&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yaourt -Qi ppsspp   &lt;span class=&quot;c&quot;&gt;# 查询软件包信息/依赖，如本机缺少相关依赖，使用 dnf 进行安装&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yaourt-link -s ppsspp  &lt;span class=&quot;c&quot;&gt;# 将隔离环境中的包软链接至系统&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;删除 ppsspp&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yaourt-link -r ppsspp  &lt;span class=&quot;c&quot;&gt;# 删除系统中的软链接&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yaourt -R ppsspp   &lt;span class=&quot;c&quot;&gt;# 删除 ppsspp&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yaourt -Q   &lt;span class=&quot;c&quot;&gt;# 查询已安装软件包&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;faq--archlinux-ubuntu-&quot;&gt;FAQ: 为何安装 Archlinux 软件包？Ubuntu 呢？&lt;/h2&gt;
+
+&lt;p&gt;Archlinux 严格遵守 FHS，文件系统目录结构非常标准，与 Fedora 兼容。同时，Archlinux、Fedora 的开发速度都非常快，理论上基本能够使两个库中的软件 ABI 兼容，但我们并不对此做任何保证（数据无价，注意备份）。&lt;/p&gt;
+
+&lt;p&gt;现在，翻翻 AUR 看看有什么好玩的软件吧。&lt;/p&gt;
+
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Jul 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/07/28/yaourt/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/07/28/yaourt/</guid>
+        
+        <category>Arch</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Have Fun Fedora系列：Fedora22 看电影的正确姿势之深度影音</title>
+        <description>&lt;p&gt;经过笔者不断的调试，今天终于成功将 Deepin Movie 迁移至 Fedora 21/22。&lt;/p&gt;
+
+&lt;p&gt;~(≧▽≦)/~&lt;/p&gt;
+
+&lt;p&gt;深度一直是国内开源界的良心企业，Linux Deepin 系统包含的一系列本土化的应用也给 Linux 桌面带来了全新的操作体验。&lt;/p&gt;
+
+&lt;p&gt;本次迁移的 &lt;a href=&quot;http://planet.linuxdeepin.com/freely-play-with-ultimate-fluency-deepin-movie-v2-2-enjoy-your-audio-visual-feast&quot;&gt;深度影院 v2.2.2&lt;/a&gt; 采用全新的 &lt;a href=&quot;http://www.qtav.org&quot;&gt;QtAV&lt;/a&gt; 多媒体框架，极大增强了解码能力，可流畅播放各类高清视频。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pan.baidu.com/s/1sjykTqt&quot;&gt;下载4K.2160p.120fps 测试视频&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;安装方法：&lt;/h2&gt;
+
+&lt;p&gt;为您的 Fedora 21/22 添加 &lt;a href=&quot;http://repo.fdzh.org&quot;&gt;FZUG&lt;/a&gt; 源后，执行以下命令：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# dnf install deepin-movie&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 12 Jul 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/07/12/install-dmovie/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/07/12/install-dmovie/</guid>
+        
+        <category>Fedora22</category>
+        
+        <category>deepin-movie</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Windows 下校验 Fedora 安装文件</title>
+        <description>&lt;p&gt;在准备安装 Fedora 22 前，对下载的 ISO 安装文件进行校验是很有必要的。下面我们在 Windows 环境下进行对 Fedora 22（64bit) ISO 文件的校验。&lt;/p&gt;
+
+&lt;p&gt;1, 点击 开始 &amp;gt; 运行 &amp;gt; cmd，输入 PowerShell 进入 Windows PowerShell&lt;/p&gt;
+
+&lt;p&gt;2，进入Fedora ISO文件所在的目录，如&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\D&lt;/span&gt;ownloads&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;3，按顺序运行以下命令:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Fedora-Live-Workstation-x86_64-22-3.iso&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;（请注意这里笔者以自己的 iso 文件为例，如果您下载了其他版本的 Fedora，请自行修改文件名）&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$checksum_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Fedora-Workstation-22-x86_64-CHECKSUM&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;（请注意这里笔者以 Fedora 22 工作站（64 bit)版为例，如果您下载了其他版本的 Fedora，请在 https://getfedora.org/verify 查询 checksum_file )&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$sha256&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$expected_checksum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;Get-Content &lt;span class=&quot;nv&quot;&gt;$checksum_file&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Select-String -Pattern &lt;span class=&quot;nv&quot;&gt;$image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; -split &lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)[&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;.ToLower&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;4, 开始进行校验：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$download_checksum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;System.BitConverter&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;::ToString&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$sha256&lt;/span&gt;.ComputeHash&lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;System.IO.File&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;::ReadAllBytes&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PWD\$image&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)))&lt;/span&gt;.ToLower&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; -replace &lt;span class=&quot;s1&quot;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;5, 查看结果是否和 &lt;a href=&quot;https://getfedora.org/static/checksums/Fedora-Workstation-22-x86_64-CHECKSUM&quot;&gt;官网提供的预期结果&lt;/a&gt; 一致：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; &lt;span class=&quot;nv&quot;&gt;$echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Download Checksum: $download_checksum&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 11 Jul 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/07/11/verify-fedora22/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/07/11/verify-fedora22/</guid>
+        
+        <category>Windows</category>
+        
+        <category>Fedora22</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>从 Linux 引导说起</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;你可曾想过当你按下电源键到Linux登陆提示符出现这段时间在背后发生了什么吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Linux的引导过程是一个用来初始化系统的程序。它包含了在打开电源键之后直到用户界面可操作之前的一切。&lt;/p&gt;
+
+&lt;p&gt;一旦你开始使用Linux，你会发现如果你对引导过程中的步骤非常熟悉，将会有助于你解决相关故障以及按需配置你的计算机。&lt;/p&gt;
+
+&lt;p&gt;打开电源–&amp;gt;BIOS–&amp;gt;MBR(主引导记录，硬盘的第一个扇区–&amp;gt;引导程序(例如GRUB)–&amp;gt;内核（Linux 系统）)–&amp;gt;initramfs映像–&amp;gt;/sbin/init（父进程）–&amp;gt;终端提示符–&amp;gt;X Windows System(图形用户界面)&lt;/p&gt;
+
+&lt;h3 id=&quot;bios---&quot;&gt;BIOS - 第一步&lt;/h3&gt;
+
+&lt;p&gt;开启一台X86平台的Linux系统涉及到很多步骤。当计算机的电源被打开时，基本输入输出系统（BIOS）开始初始化硬件，包括屏幕、键盘，同时测试主存储器。这个过程也被叫做POST（加电自检）。
+BIOS软件被存储在主板的一个ROM芯片上。在这之后，剩下的引导过程将完全的被操作系统所控制。&lt;/p&gt;
+
+&lt;h3 id=&quot;mbr&quot;&gt;主引导记录（MBR）和引导程序&lt;/h3&gt;
+&lt;p&gt;一旦加电自检完成，系统控制权就由BIOS传递给了引导程序。引导程序通常被存储在系统中的一个硬盘，不是在引导扇区（传统的BIOS/MBR系统）就是在EFI分区（较新的可扩展固件接口或者EFI/UEFI系统）。在这时，机器并不能存取大容量存储器。之后，日期、时间以及最重要的外围设备被从CMOS（基于电池的存储器，允许系统在断电之后继续记录日期和时间）加载到系统。
+在Linux中有很多引导程序；最常见的就是GRUB（统一引导程序）和ISOLINUX（从可移动介质上启动）。大多数的Linux 引导程序能提供用户界面来选择选项引导Linux，甚至其他可能安装着的操作系统。当引导Linux时，引导程序负责加载内核映象和初始化RAM磁盘（包含了一些用来启动系统的关键文件和设备驱动）到内存。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;活动中的引导程序&lt;/h3&gt;
+&lt;p&gt;引导程序分为两个不同的阶段&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;第一阶段：&lt;/h4&gt;
+&lt;p&gt;对于使用BIOS/MBR技术的系统，其引导程序位于硬盘的第一个扇区，又被成为主引导扇区（MBR）。MBR的大小仅仅为512字节。在这个阶段，引导程序检查分区表寻找一个可启动的分区。一旦找到,就开始寻找第二阶段的引导程序，例如GRUB，并把它加载到RAM（随机存取存储器）。
+当系统使用EFI/UEFI技术时，UEFI固件读取它的启动管理程序来决定哪一个UEFI程序和哪里开始（例如在哪个磁盘或分区可以找到EFI分区）启动。固件随后启动UEFI程序——比如说GRUB——它被定义为固件启动管理程序的入口。这个步骤非常复杂但是它的灵活性远远超过了旧的MBR技术。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;第二阶段：&lt;/h4&gt;
+&lt;p&gt;第二阶段的引导程序位于/boot下。一个启动画面会被显示用来让我们选择一个操作系统（OS）启动。在选择完OS之后，引导程序加载被选择的操作系统的内核到内存中并将控制权移交给它。引导程序加载被选择的内核映像（在这里是Linux）并将控制权移交给它。内核基本上都是被压缩的，所以它首先得解压自己。在这之后，它将检查并分析系统硬件并初始化硬件设备驱动到内核中&lt;/p&gt;
+
+&lt;h3 id=&quot;linux&quot;&gt;Linux内核&lt;/h3&gt;
+&lt;p&gt;引导程序同时加载内核和初始化文件系统（initramfs）到内存，以使initramfs可以直接被内核使用。
+当内核被加载到RAM中，它将立即初始化和配置计算机内存，同时也配置所有依赖于系统的硬件。包括所有的处理器、I/O子系统、存储设备等等。内核同时也加载一些必须的用户空间应用程序。&lt;/p&gt;
+
+&lt;h3 id=&quot;ram&quot;&gt;RAM的初始化&lt;/h3&gt;
+&lt;p&gt;initramfs包含了用来加载正确的根文件系统所需要的程序和二进制文件，像是为文件系统提供内核函数以及为一个叫做udev（面向USB设备）的被用来确认设备是否存在和定位适合的驱动并加载它们的大容量存储控制器提供设备驱动）。当发现根文件系统后，将会进行错误检测并加载。
+mount程序通知操作系统有一个文件系统已经准备好被使用了，并协助它挂载在整个文件系统的最顶层（挂载点）。如果成功了，initramfs将会被从内存清除，然后根文件系统 下的init程序(/sbin/init)将会被执行。
+init处理挂载并转到最终的、也是真正的根文件系统下。如果在大容量存储设备可以存取之前需要特殊的硬件驱动，它们必须被包含在initramfs映像中。&lt;/p&gt;
+
+&lt;p&gt;一旦内核设置好了所有硬件并被挂载到根文件系统之后将会开始运行/sbin/init程序。这个初始进程将会启动其他进程来让系统开始运行。系统中的绝大多数其他进程归根结底都是来源于init；例外的是内核进程，直接由内核启动来管理操作系统的内部细节。
+传统上，（这个进程的启动是使用System V UNIX的数据返回约定来完成的，在系统经过一系列的包括各种开启和关闭服务的脚本时。）？？？每种运行级别提供不同的系统运行模式。在不同的级别，每个单独的服务都能被运行或者在运行时被关闭。较新的发行版已经开始抛弃the System V 标准了，但为了兼容性的目的还是通常支持the System V约定。
+除了启动系统之外，init也负责保持系统运行和完全关闭系统。它表现为所有非内核进程的最终管理者，当需要时会在进程结束之后进行清理。同时在用户登入登出时重启用户登录进程。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;字符界面登录&lt;/h3&gt;
+&lt;p&gt;在引导过程结束之前，init启动会一些字符界面的登录提示符（使用一个叫getty的程序）。它能允许你输入用户名和密码，最后转到命令解释器。默认的命令解释器通常是bash（Bourne Shell的后继，叫GNU Bourne Again Shell），但也有许多其他的高级命令解释器。shell输出一个字符提示符，预示它已经准备好接受命令。在用户输入命令并按下回车键之后，命令就会被执行。在命令执行完之后将会显示另一个提示符。
+在你学完后面的‘命令行操作’之后，终端将可以使用ALT键作为一个额外的功能键。大多数发行版启动六个终端和用F1和F2启动的图形终端。如果图形终端已经启动了，切换到字符需要按下CRTL-ALT+功能键（F1到F7）.如果你处在纯字符模式，你可能需要使用startx命令来启动或重启你的图形桌面。&lt;/p&gt;
+
+&lt;h3 id=&quot;x-window-system&quot;&gt;X Window System&lt;/h3&gt;
+&lt;p&gt;通常，在一个Linux桌面系统中，加载X Window System是引导过程的最后一步。一个被称为显示管理器的服务被提供用来追踪显示过程和加载X server（这样叫是因为它提供应用程序的图形服务，有时也叫做X clients）。这个显示管理器也处理图形化的登陆界面以及在一个用户登录后开启合适的桌面环境。
+一个桌面环境包含一个启动和维护图形会话组件的会话管理器、一个控制和摆放窗口、标题栏以及一系列控件的窗口管理器。不过它们都是一同呈现的。通常这些程序、会话管理器和窗口管理器会被作为一个整体同时使用以提供一个无缝的桌面环境。如果显示管理器没有在默认运行级别启动，你可以通过另一种方法启动X，在通过字符界面登录后，从命令行运行 startx 命令。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;转载请注明来源&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Jun 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/06/26/linux-boot/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/06/26/linux-boot/</guid>
+        
+        <category>linux</category>
+        
+        <category>boot</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Linux 发行版是什么，它又与Linux内核有什么联系？</title>
+        <description>&lt;h2 id=&quot;linux-linux&quot;&gt;Linux 发行版是什么，它又与Linux内核有什么联系？&lt;/h2&gt;
+&lt;p&gt;Linux内核是计算机操作系统的核心。一个完整的 Linux发行版包括了内核与一些其他与文件相关的操作，用户管理系统，和软件包管理器等一系列软件。每个工具都是整个系统的一小部分。这些工具通常都是一个个独立的项目，有相应的开发者来开发及维护。&lt;/p&gt;
+
+&lt;p&gt;前面提到的Linux内核，包括现行版本，以及历史版本（即更早发布的版本）都可以在 www.kernel.org 找到。Linux的众多发行版可能是基于不同的内核版本的。例如：流行的 RHEL6发行版是基于很老但是很稳定的 2.6.32 版本的Linux内核的。其他的一些发行版可能会很快的更新以适应最新的内核版本。需要特别注意的一点是，内核并不是一个非此即彼的命题，例如RHEL6就在2.6.32的内核中引进了新版本内核的许多改进。&lt;/p&gt;
+
+&lt;p&gt;各发行版提供的其他基本工具和组成部分还有包括以下的内容：C/C++编译器，gdbdebugger 调试工具，核心系统库应用程序，用于在屏幕上绘图的底层接口以及高级的桌面环境，以及供安装和更新包括内核在内的众多组建的系统&lt;/p&gt;
+
+&lt;p&gt;众多不同的Linux发行版满足了不同用户及组织的不同需求。大型商业机构通常倾向于使用来由 Red Hat、 SUSE 及 Canonical (Ubuntu)提供的发行版。&lt;/p&gt;
+
+&lt;p&gt;Fedora 是基于RHEL，CentOS，Scientific Linux, 和Oracle Linux的社区版本。相比RHEL，Fedora打包了显著的更多的软件包。其中一个原因是，多样化的社区参与Fedora的建设;它不只是一家公司。在这个过程中，CentOS用于活动，演示和实验，因为它是对最终用户免费提供的，并具有比Fedora的一个更长的发布周期（通常每隔半年左右发布一个新版本）。&lt;/p&gt;
+
+&lt;p&gt;SUSE, SUSE Linux Enterprise Server (SLES), 和openSUSE 之间的关系类似于 Fedora, Red Hat Enterprise Linux, 和CentOS的关系。&lt;/p&gt;
+
+&lt;p&gt;Debian是包括Ubuntu在内许多发行版的上游，而Ubuntu又是Linux Mint及其他发行版的上游。Debian在服务器和桌面电脑领域都有着广泛的应用。Debian是一个纯开源计划并着重在一个关键点上，稳定性。它同时也提供了最大的和完整的软件仓库给用户。&lt;/p&gt;
+
+&lt;p&gt;转载请注明来源: &lt;a href=&quot;https://github.com/fdzh/LFS101x&quot;&gt;Linux 入门教程翻译项目&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jun 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/slides/2015/06/20/linux-distr/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/slides/2015/06/20/linux-distr/</guid>
+        
+        <category>lfs101x</category>
+        
+        <category>Linux家族</category>
+        
+        
+        <category>slides</category>
+        
+      </item>
+    
+      <item>
+        <title>中文版Linux导论 (Edx courses LFS101x）翻译并招募志愿者ing</title>
+        <description>&lt;p&gt;LFS101x 是 Linux 基金会录制的 Linux 入门教程，，Linus 本人也推荐过。对新手了解 Linux 社区，安装使用 Linux 大有帮助，可惜视频全英文且由 utube 托管，对国内新手很不”友好”，所以我们开启翻译并传播该教程的活动，欢迎大家参加！&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;如何加入？&lt;/h2&gt;
+&lt;p&gt;加入我们的&lt;a href=&quot;https://groups.google.com/forum/#!forum/edxstar&quot;&gt;邮件列表&lt;/a&gt; 或&lt;a href=&quot;https://github.com/fdzh/LFS101x/wiki/CheckIn&quot;&gt;点此&lt;/a&gt;报名&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/fdzh/LFS101x/wiki/%E7%BF%BB%E8%AF%91%E6%96%87%E4%BB%B6&quot;&gt;翻译文件/流程&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pr&quot;&gt;欢迎提交 PR&lt;/h2&gt;
+&lt;p&gt;参见 &lt;a href=&quot;https://github.com/tvvocold/LFS101x-Introduction-to-Linux-in-Chinese/wiki&quot;&gt;WiKi&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jun 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2015/06/20/lfs101/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/06/20/lfs101/</guid>
+        
+        <category>LFS101x</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>F6a 星系漫游指南</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Hi！你是刚到 F6a (Fedora) 超新星的新人（类）？ 你是刚接触 Fedora 的新手？ 你有棘手的问题需要帮忙（你需要搭车）？ &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;f6ahttpfzuggithubiomembers-&quot;&gt;这一切都交给&lt;a href=&quot;http://fzug.github.io/members&quot;&gt; F6a超新星人&lt;/a&gt; 吧!&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;欢迎登陆 &lt;strong&gt;&lt;a href=&quot;http://hack.fdzh.org&quot;&gt;Hack&lt;/a&gt;&lt;/strong&gt;，在 &lt;a href=&quot;http://hack.fdzh.org/ask&quot;&gt;/ask&lt;/a&gt; 板块提交你的问题，或者回答他人的问题！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们欢迎阁下在 &lt;strong&gt;&lt;a href=&quot;http://hack.fdzh.org&quot;&gt;Hack&lt;/a&gt;&lt;/strong&gt; 上发布有趣的业界新闻/小道消息。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;通过简单易用的 &lt;strong&gt;&lt;a href=&quot;https://copr.fdzh.org/&quot;&gt;Copr&lt;/a&gt;&lt;/strong&gt; 构建系统，只需选择系统/架构并提供 srpm，其它交给 Copr 即可。我们还为您提供了简单易用的&lt;strong&gt;&lt;a href=&quot;http://repo.fdzh.org/&quot;&gt;软件源&lt;/a&gt;&lt;/strong&gt;！
+)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;您还可以在我们的 &lt;strong&gt;&lt;a href=&quot;http://slides.fdzh.org&quot;&gt;Slides&lt;/a&gt;&lt;/strong&gt; 上制作基于 Gist 的泡泡糖，是不是很酷?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;有大段代码（文章）需要粘贴？使用我们的 &lt;strong&gt;&lt;a href=&quot;http://p.fdzh.org&quot;&gt;Pastebin&lt;/a&gt;&lt;/strong&gt;。甚至制作自己的 &lt;strong&gt;&lt;a href=&quot;http://fdzh.ga&quot;&gt;短网址&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们接受任何人的 &lt;strong&gt;&lt;a href=&quot;https://github.com/fdzh/fdzh.github.io/wiki&quot;&gt;投稿&lt;/a&gt;&lt;/strong&gt;，让好东西不再埋没！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;有空的话，来 &lt;strong&gt;&lt;a href=&quot;http://irc.fdzh.org/&quot;&gt;社区 IRC 在线聊天室&lt;/a&gt;&lt;/strong&gt;逛逛，看看谁在那儿?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;　&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;这一切都是&lt;strong&gt;永久免费，自由使用的&lt;/strong&gt;！&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;还等什么？赶快登陆我们的 &lt;strong&gt;&lt;a href=&quot;http://hack.fdzh.org&quot;&gt;F6a超新星&lt;/a&gt;&lt;/strong&gt; 吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;good-luck--have-fun&quot;&gt;Good Luck &amp;amp; Have Fun！&lt;/h2&gt;
+
+</description>
+        <pubDate>Mon, 01 Jun 2015 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/slides/2015/06/01/f6a/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/slides/2015/06/01/f6a/</guid>
+        
+        <category>f6a</category>
+        
+        
+        <category>slides</category>
+        
+      </item>
+    
+  </channel>
+</rss>

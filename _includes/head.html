@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns#">
+
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <!-- Site Properities -->
+  {% if page.title == "Home" %}
+    {% capture title_tag %}{{ site.tagline }}{% endcapture %}
+  {% else %}
+    {% capture title_tag %}{{ page.title }}{% endcapture %}
+  {% endif %}
+  
+  <title>{{ title_tag }} - fdzh.org </title>
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  
+  <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+  {% if site.facebook %}
+  <meta property="fb:app_id" content="{{ site.facebook_app }}">
+  {% endif %}
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+  <meta property="og:title" content="{{ title_tag }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:description" content="{% if page.layout != 'post' %}{{ site.description | strip_newlines }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}{{ site.default_image | prepend: site.url }}{% endif %}">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="300">
+
+  
+  {% if page.layout == 'post' %}
+  <meta property="og:type" content="article" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+  
+  <meta name="description" content="{% if page.layout != 'post' %}{{ site.description | strip_newlines }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
+  <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+  <script src="//dn-copr.qbox.me/topbar.js"></script>
+  <script src="//dn-copr.qbox.me/prettify.min.js"></script>
+  <link href="//7o51u6.com1.z0.glb.clouddn.com/jbardemo.css" rel="stylesheet">
+  <script src="//7o51u6.com1.z0.glb.clouddn.com/jbar.js"></script>
+  <!-- Common Styles -->
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/1.5.0/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+  <link href='//fonts.fdzh.org/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/flexslider/2.2.2/flexslider-min.css">
+  <script>
+      $(function() {
+          prettyPrint()
+          function resetToDefaults() {
+            topbar.config({
+              autoRun      : true,
+              barThickness : 3,
+              barColors    : {
+                '0'      : 'rgba(26,  188, 156, .9)',
+                '.25'    : 'rgba(52,  152, 219, .9)',
+                '.50'    : 'rgba(241, 196, 15,  .9)',
+                '.75'    : 'rgba(230, 126, 34,  .9)',
+                '1.0'    : 'rgba(211, 84,  0,   .9)'
+              },
+              shadowBlur   : 10,
+              shadowColor  : 'rgba(0,   0,   0,   .6)'
+            })
+          }
+
+          // Page load
+          resetToDefaults()
+          topbar.show()
+          setTimeout(function() {
+            $('#main_content').fadeIn('slow')
+            topbar.hide()
+          }, 1500)
+
+          
+
+          // Advanced Demo
+          $('#btnStartAdvanced').click(function() {
+            resetToDefaults()
+            topbar.config({
+              autoRun      : false, 
+              barThickness : 5,
+              barColors    : {
+                  '0'      : 'rgba(26,  188, 156, .7)',
+                  '.3'     : 'rgba(41,  128, 185, .7)',
+                  '1.0'    : 'rgba(231, 76,  60,  .7)'
+              },
+              shadowBlur   : 5,
+              shadowColor  : 'rgba(0, 0, 0, .5)'
+            })
+            topbar.show();
+            (function step() {
+              setTimeout(function() {  
+                if (topbar.progress('+.01') < 1) step()
+              }, 16)
+            })()
+          })
+          $('#btnStopAdvanced').click(function() {
+            topbar.hide()  
+          })
+      })
+    </script>
+  
+
+<style>
+.ui.menu:first-child {
+margin-top: 0;
+background-color: rgba(255,255,255,0.3);
+}
+
+.ui.menu{
+  background:none;
+}
+ 
+  #particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #16a085;
+    position: absolute;
+    padding-bottom:10rem;
+  }
+  .segmentss {
+      text-align:center;
+      color:#fff;
+      padding:1rem;
+  }
+  .segmentss h1 {
+      text-align:center;
+  } 
+  .tmtltle {
+    margin-bottom：5rem;
+    font-size:1.4rem;
+  }
+  .tmtltle h1 {
+    padding: 30px 0 0 0;
+    line-height: 1.2;
+    text-align:center;
+  }
+  .tmtltle h2 a{
+    color:blue;
+  }
+  .global .header-3d {
+    color: #000;
+    line-height:10.5rem;
+    font-size:2.2rem;
+    text-shadow:none;
+}
+  }
+  .tmtltle h2 {
+    margin-bottom：15rem !important;
+    text-align:center !important;
+  }
+  
+  #what-fedora-is-for {
+    line-height: 1.2;
+    
+    margin-bottom: 20px;
+    color: #000;
+    width: 250px;
+    text-align: left
+}
+
+}
+</style>
+ 
+

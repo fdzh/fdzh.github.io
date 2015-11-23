@@ -1,0 +1,34 @@
+---
+layout: landing
+title: Fedora中文社区 Blog
+description: Freedom. Friends. Features. First.
+---
+
+<div class="ui inverted vertical segment dark-wood">
+  <div class="ui very relaxed stackable page grid">
+    <div class="row">
+      <div class="eight wide column">
+        {% include recent-posts.html %}
+      </div>
+
+      <div class="eight wide column">
+          
+          {% include left-top-post.html %}        
+
+        <div class="ui inverted divider"></div>
+
+        <h3 class="ui inverted header">Tags</h3>
+          {% include site-tags.html %}
+          
+        <div class="ui inverted divider"></div>
+        
+        <h3 class="ui inverted header">Categories</h3>
+          {% include site-categories.html %}
+        
+        <h3 class="ui inverted header">Ad</h3>
+          {% include amazon.html %}
+          
+      </div>
+    </div> <!-- /row -->
+  </div>
+</div>

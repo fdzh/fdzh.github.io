@@ -1,0 +1,39 @@
+<div class="ui segment inverted postbar dark-wood">
+
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">邮件周刊（每周五推送）</h3>
+        <div class="ui inverted divider"></div>
+        {% include embed-mailchimp.html tagline="不想错过精彩内容? 输入邮箱: " button="立即订阅吧!（免费）" %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">相关推荐</h3>
+        <div class="ui inverted divider"></div>
+        {% include related-posts.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">标签</h3>
+        <div class="ui inverted divider"></div>
+        {% include site-tags.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">分类</h3>
+        <div class="ui inverted divider"></div>
+        {% include site-categories.html %}
+      </div>
+    </div> <!-- /row -->
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">Ad</h3>
+        <div class="ui inverted divider"></div>
+        {% include amazon.html %}
+      </div>
+    </div>
+</div>

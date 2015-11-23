@@ -1,0 +1,87 @@
+  {% include head.html %}
+  <style>
+  .post .postbar {
+    margin: 0em;
+    padding: 1rem;
+  }
+  
+  .post .postbar .column {
+    margin-bottom: 1em;
+  }
+  
+  .post .image {
+    margin-bottom: 1em;
+  }
+
+  </style>
+
+  </head>
+  
+  <body class="global post">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    {% if site.facebook %}
+      {% include fb-setup.html %}
+    {% endif %}
+    
+    {% if site.pagebar %}
+    {% include page-bar.html %}
+    <div class="pusher">
+    {% endif %}
+        {% include post-header.html %}
+        <div class="ui vertical segment">
+          <div class="ui very relaxed stackable page grid">
+            {% if site.postbar %}
+            <div class="ten wide column">
+            {% else %}
+            <div class="sixteen wide column">
+            {% endif %}
+                {% if page.image %}
+                <img class="ui rounded image" src="{{ page.image }}" alt="{{ page.title }}">
+                {% endif %}
+                {{ content }}
+                {% include posts-paginator.html %}
+<div class="ui minimal demo button"><a href='javascript:window.location=%22http://hack.fdzh.org/submitlink?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)'>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小提示：点此在 Fedora Hack 发布/评论/赞赏本文 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </a></div>
+                {% if site.comments == 'disqus' %}
+                  <div class="ui divider"></div>
+                  {% include disqus.html %}
+                {% elsif site.facebook and site.comments == 'facebook' %}
+                  <div class="ui divider"></div>
+                  {% include fb-comments.html %}
+                {% endif %}
+
+            </div>
+            {% if site.postbar %}
+            <div class="six wide column">
+                {% include post-bar.html %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% include footer.html %}
+    {% if site.pagebar %}
+    </div> <!-- pusher -->
+    {% endif %}
+
+    {% include js.html %}
+
+    <script>
+    $(document).ready(function() {
+    
+      $(".time").text(function (index, value) {
+        return Math.round(parseFloat(value));
+      });
+      
+    });
+    </script>
+    
+   
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"171.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+ 
+    {% include embed-google-analytics.html %}
+
+ </body>
+
+</html>

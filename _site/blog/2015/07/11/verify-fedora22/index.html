@@ -1,0 +1,639 @@
+  <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns#">
+
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <!-- Site Properities -->
+  
+    
+  
+  
+  <title>Windows 下校验 Fedora 安装文件 - fdzh.org </title>
+  <link rel="canonical" href="http://www.fdzh.org/blog/2015/07/11/verify-fedora22/">
+  
+  <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+  
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="http://www.fdzh.org/blog/2015/07/11/verify-fedora22/">
+  <meta property="og:title" content="Windows 下校验 Fedora 安装文件">
+  <meta property="og:site_name" content="fdzh.org">
+  <meta property="og:description" content="在准备安装 Fedora 22 前，对下载的 ISO 安装文件进行校验是很有必要的。下面我们在 Windows 环境下进行对 Fedora 22（64bit) ISO 文件的校验。">
+  <meta property="og:image" content="http://www.fdzh.orghttp://7o51u6.com1.z0.glb.clouddn.com/1295684929_ddvip_2818.png">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="300">
+
+  
+  
+  <meta property="og:type" content="article" />
+  
+  
+  <meta name="description" content="在准备安装 Fedora 22 前，对下载的 ISO 安装文件进行校验是很有必要的。下面我们在 Windows 环境下进行对 Fedora 22（64bit) ISO 文件的校验。">
+  <meta name="keywords" content="Windows, Fedora22, blog">
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+  <script src="//dn-copr.qbox.me/topbar.js"></script>
+  <script src="//dn-copr.qbox.me/prettify.min.js"></script>
+  <link href="//7o51u6.com1.z0.glb.clouddn.com/jbardemo.css" rel="stylesheet">
+  <script src="//7o51u6.com1.z0.glb.clouddn.com/jbar.js"></script>
+  <!-- Common Styles -->
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/1.5.0/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+  <link href='//fonts.fdzh.org/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/flexslider/2.2.2/flexslider-min.css">
+  <script>
+      $(function() {
+          prettyPrint()
+          function resetToDefaults() {
+            topbar.config({
+              autoRun      : true,
+              barThickness : 3,
+              barColors    : {
+                '0'      : 'rgba(26,  188, 156, .9)',
+                '.25'    : 'rgba(52,  152, 219, .9)',
+                '.50'    : 'rgba(241, 196, 15,  .9)',
+                '.75'    : 'rgba(230, 126, 34,  .9)',
+                '1.0'    : 'rgba(211, 84,  0,   .9)'
+              },
+              shadowBlur   : 10,
+              shadowColor  : 'rgba(0,   0,   0,   .6)'
+            })
+          }
+
+          // Page load
+          resetToDefaults()
+          topbar.show()
+          setTimeout(function() {
+            $('#main_content').fadeIn('slow')
+            topbar.hide()
+          }, 1500)
+
+          
+
+          // Advanced Demo
+          $('#btnStartAdvanced').click(function() {
+            resetToDefaults()
+            topbar.config({
+              autoRun      : false, 
+              barThickness : 5,
+              barColors    : {
+                  '0'      : 'rgba(26,  188, 156, .7)',
+                  '.3'     : 'rgba(41,  128, 185, .7)',
+                  '1.0'    : 'rgba(231, 76,  60,  .7)'
+              },
+              shadowBlur   : 5,
+              shadowColor  : 'rgba(0, 0, 0, .5)'
+            })
+            topbar.show();
+            (function step() {
+              setTimeout(function() {  
+                if (topbar.progress('+.01') < 1) step()
+              }, 16)
+            })()
+          })
+          $('#btnStopAdvanced').click(function() {
+            topbar.hide()  
+          })
+      })
+    </script>
+  
+
+<style>
+.ui.menu:first-child {
+margin-top: 0;
+background-color: rgba(255,255,255,0.3);
+}
+
+.ui.menu{
+  background:none;
+}
+ 
+  #particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #16a085;
+    position: absolute;
+    padding-bottom:10rem;
+  }
+  .segmentss {
+      text-align:center;
+      color:#fff;
+      padding:1rem;
+  }
+  .segmentss h1 {
+      text-align:center;
+  } 
+  .tmtltle {
+    margin-bottom：5rem;
+    font-size:1.4rem;
+  }
+  .tmtltle h1 {
+    padding: 30px 0 0 0;
+    line-height: 1.2;
+    text-align:center;
+  }
+  .tmtltle h2 a{
+    color:blue;
+  }
+  .global .header-3d {
+    color: #000;
+    line-height:10.5rem;
+    font-size:2.2rem;
+    text-shadow:none;
+}
+  }
+  .tmtltle h2 {
+    margin-bottom：15rem !important;
+    text-align:center !important;
+  }
+  
+  #what-fedora-is-for {
+    line-height: 1.2;
+    
+    margin-bottom: 20px;
+    color: #000;
+    width: 250px;
+    text-align: left
+}
+
+}
+</style>
+ 
+
+
+  <style>
+  .post .postbar {
+    margin: 0em;
+    padding: 1rem;
+  }
+  
+  .post .postbar .column {
+    margin-bottom: 1em;
+  }
+  
+  .post .image {
+    margin-bottom: 1em;
+  }
+
+  </style>
+
+  </head>
+  
+  <body class="global post">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+    
+    
+    
+
+    <div class="pusher">
+    
+        <!-- posthead -->
+<div class="ui masthead segment symphony">
+  <div class="ui page grid">
+    <div class="column">
+        
+        <div class="ui menu">
+  <a class="header item" href="/">Home</a>
+  <div class="right menu">
+    <a class="item menu-details " href="http://hack.fdzh.org" target="_blank" data-position="bottom left" data-content="For Hacker"><i class="users icon"></i>Hack</a>
+    <a class="item menu-details " href="/blog/"  data-position="bottom left" data-content="For Blogger"><i class="idea icon"></i>Blog</a>
+    <a class="item menu-details " href="http://repo.fdzh.org" target="_blank" data-position="bottom left" data-content="For User"><i class="shop icon"></i>Repo</a>
+    <a class="item menu-details " href="https://github.com/fzug" target="_blank" data-position="bottom left" data-content="For Packager"><i class="github icon"></i>GitHub</a>
+    <a class="item menu-details " href="http://p.fdzh.org" target="_blank" data-position="bottom left" data-content="For Coder"><i class="write square icon"></i>Paste</a>
+    <a class="item menu-details " href="http://slides.fdzh.org" target="_blank" data-position="bottom left" data-content="For Teacher"><i class="wizard icon"></i>Slides</a>
+    
+    <div class="item">
+      <div class="ui transparent mini icon input">
+        <form onsubmit="return google()" _lpchecked="1"><input type="text" placeholder="$ find . " maxlength="40" name="q" id="q" value=""></form>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- information -->
+        <div class="ui information">
+          <a href="/blog/2015/07/11/verify-fedora22/">
+          <h1 class="ui header">
+            Windows 下校验 Fedora 安装文件
+          </h1>
+          </a>
+          <h2>在准备安装 Fedora 22 前，对下载的 ISO 安装文件进行校验是很有必要的。下面我们在 Windows 环境下进行对 Fedora 22（64bit) ISO 文件的校验。
+
+</h2>
+          <p>
+            <i class="icon calendar"></i> Jul 11, 2015
+             • <i class="edit icon"></i> tvvocold
+            
+            
+              <!-- Based on https://andytaylor.me/2013/04/07/reading-time/ -->
+              
+              
+               • <i class="icon clock"></i> ~ <span class="time">1</span> min to read
+              
+            
+
+            
+              • <i class="icon tags"></i> 
+              
+                <a class="ui tag label mini purple" href="/tag/#Windows">Windows</a>
+              
+                <a class="ui tag label mini purple" href="/tag/#Fedora22">Fedora22</a>
+              
+            
+          </p>
+
+          
+        </div> 
+        <!-- /information -->
+    </div>
+  </div>
+</div>
+<!-- /posthead -->
+
+        <div class="ui vertical segment">
+          <div class="ui very relaxed stackable page grid">
+            
+            <div class="ten wide column">
+            
+                
+                <img class="ui rounded image" src="http://7o51u6.com1.z0.glb.clouddn.com/1295684929_ddvip_2818.png" alt="Windows 下校验 Fedora 安装文件">
+                
+                <p>在准备安装 Fedora 22 前，对下载的 ISO 安装文件进行校验是很有必要的。下面我们在 Windows 环境下进行对 Fedora 22（64bit) ISO 文件的校验。</p>
+
+<p>1, 点击 开始 &gt; 运行 &gt; cmd，输入 PowerShell 进入 Windows PowerShell</p>
+
+<p>2，进入Fedora ISO文件所在的目录，如</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$HOME</span><span class="se">\D</span>ownloads<span class="se">\</span></code></pre></div>
+
+<p>3，按顺序运行以下命令:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$image</span> <span class="o">=</span> <span class="s2">&quot;Fedora-Live-Workstation-x86_64-22-3.iso&quot;</span></code></pre></div>
+
+<p>（请注意这里笔者以自己的 iso 文件为例，如果您下载了其他版本的 Fedora，请自行修改文件名）</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$checksum_file</span> <span class="o">=</span> <span class="s2">&quot;Fedora-Workstation-22-x86_64-CHECKSUM&quot;</span></code></pre></div>
+
+<p>（请注意这里笔者以 Fedora 22 工作站（64 bit)版为例，如果您下载了其他版本的 Fedora，请在 https://getfedora.org/verify 查询 checksum_file )</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$sha256</span> <span class="o">=</span> New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider</code></pre></div>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$expected_checksum</span> <span class="o">=</span> <span class="o">((</span>Get-Content <span class="nv">$checksum_file</span> <span class="p">|</span> Select-String -Pattern <span class="nv">$image</span><span class="o">)</span> -split <span class="s2">&quot; &quot;</span><span class="o">)[</span>0<span class="o">]</span>.ToLower<span class="o">()</span></code></pre></div>
+
+<p>4, 开始进行校验：</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$download_checksum</span> <span class="o">=</span> <span class="o">[</span>System.BitConverter<span class="o">]</span>::ToString<span class="o">(</span><span class="nv">$sha256</span>.ComputeHash<span class="o">([</span>System.IO.File<span class="o">]</span>::ReadAllBytes<span class="o">(</span><span class="s2">&quot;$PWD\$image&quot;</span><span class="o">)))</span>.ToLower<span class="o">()</span> -replace <span class="s1">&#39;-&#39;</span>, <span class="s1">&#39;&#39;</span></code></pre></div>
+
+<p>5, 查看结果是否和 <a href="https://getfedora.org/static/checksums/Fedora-Workstation-22-x86_64-CHECKSUM">官网提供的预期结果</a> 一致：</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; <span class="nv">$echo</span> <span class="s2">&quot;Download Checksum: $download_checksum&quot;</span></code></pre></div>
+
+
+                 <!-- Pagination -->   
+<div class="ui 2 fluid basic buttons">
+   
+  <a class="ui labeled icon button" href="/blog/2015/06/26/linux-boot/" 
+    title="从 Linux 引导说起">
+    <i class="left arrow icon"></i>
+    Previous Post
+  </a>
+   
+   
+  <a class="ui right labeled icon button" href="/blog/2015/07/12/install-dmovie/" 
+    title="Have Fun Fedora系列：Fedora22 看电影的正确姿势之深度影音">
+    <i class="right arrow icon"></i>
+    Next Post
+  </a>
+   
+</div>
+
+<div class="ui minimal demo button"><a href='javascript:window.location=%22http://hack.fdzh.org/submitlink?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)'>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小提示：点此在 Fedora Hack 发布/评论/赞赏本文 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </a></div>
+                
+                  <div class="ui divider"></div>
+                  <!-- Disqus Comments -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                
+
+            </div>
+            
+            <div class="six wide column">
+                <div class="ui segment inverted postbar dark-wood">
+
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">邮件周刊（每周五推送）</h3>
+        <div class="ui inverted divider"></div>
+        
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup" class="ui form segment">
+  <form action="//fdzh.us8.list-manage.com/subscribe/post?u=47617a7ddf39f5eb98420023a&amp;id=e507ff23b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <p>不想错过精彩内容? 输入邮箱: </p>
+    <div class="field">
+      <div class="ui left icon input">
+        <i class="user icon"></i>
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="name@email.com">
+    	</div>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_47617a7ddf39f5eb98420023a_e507ff23b2" tabindex="-1" value=""></div>
+        <input type="submit" value="立即订阅吧!（免费）" name="subscribe" id="mc-embedded-subscribe" class="ui fluid purple submit newsletter button">
+    </div>
+  </form>
+    <div class="ui error message"></div>
+</div>
+
+<!--End mc_embed_signup-->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">相关推荐</h3>
+        <div class="ui inverted divider"></div>
+        <div class="ui inverted animated selection list">
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/07/28/yaourt/">
+      <div class="recent-posts-title">Fedora && Arch - 最浪漫的事现已发生...</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://fdorg.qiniudn.com/arch_pacman.jpg" alt="Fedora && Arch - 最浪漫的事现已发生...">
+      </div>
+      
+      <div class="right floated"><small>Jul 28, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/11/01/first-thing-after-installation-of-Fedora/">
+      <div class="recent-posts-title">Fedora 安装后需要做的第一件事</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://7xi3zv.com1.z0.glb.clouddn.com/126b382.jpg" alt="Fedora 安装后需要做的第一件事">
+      </div>
+      
+      <div class="right floated"><small>Nov 1, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/10/18/fedora-sougoupinyin/">
+      <div class="recent-posts-title">Fedora 安装搜狗输入法</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://7xi3zv.com1.z0.glb.clouddn.com/556130f783d0f25.png_600x600.png" alt="Fedora 安装搜狗输入法">
+      </div>
+      
+      <div class="right floated"><small>Oct 18, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/07/12/install-dmovie/">
+      <div class="recent-posts-title">Have Fun Fedora系列：Fedora22 看电影的正确姿势之深度影音</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://repo.fdzh.org/img/snapshot3.jpg" alt="Have Fun Fedora系列：Fedora22 看电影的正确姿势之深度影音">
+      </div>
+      
+      <div class="right floated"><small>Jul 12, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/11/04/fedora-23-released/">
+      <div class="recent-posts-title">迟到的万圣节大餐 － Fedora 23 正式发布！</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://7o51u6.com1.z0.glb.clouddn.com/fedora-23-release-755x350.jpg" alt="迟到的万圣节大餐 － Fedora 23 正式发布！">
+      </div>
+      
+      <div class="right floated"><small>Nov 4, 2015</small></div>
+    </a>
+  
+  
+</div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">标签</h3>
+        <div class="ui inverted divider"></div>
+        
+<a class="ui tag mini label orange" href="/tag/#fedora-21">fedora-21 <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#party">party <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#ucloud">ucloud <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#repo">repo <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#fedora-22">fedora-22 <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#f6a">f6a <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#LFS101x">LFS101x <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#lfs101x">lfs101x <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#Linux家族">Linux家族 <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#linux">linux <div class="detail">1</div></a>
+
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">分类</h3>
+        <div class="ui inverted divider"></div>
+        
+  <a class="ui small label categories" href="/category/#blog">blog <div class="detail">9</div></a>
+
+  <a class="ui small label categories" href="/category/#slides">slides <div class="detail">5</div></a>
+
+
+      </div>
+    </div> <!-- /row -->
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">Ad</h3>
+        <div class="ui inverted divider"></div>
+        <a class="ui rounded image" href="https://coding.net/?ref=fdzh.org" target="_blank"><img src="http://7o51u6.com1.z0.glb.clouddn.com/coding_ad.png" border="0" width="500" height="200" alt="coding"></a>
+
+      </div>
+    </div>
+</div>
+
+            </div>
+            
+          </div>
+        </div>
+        <div class="ui inverted footer vertical segment">
+  <div class="ui stackable page grid">
+    <div class="ten wide column">
+      <div class="ui three column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">子站</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="http://hack.fdzh.org">Hack 社区</a>
+            <a class="item" href="https://copr.fedoraproject.org">Copr 构建系统</a>
+            <a class="item" href="http://repo.fdzh.org">社区软件源</a>
+            <a class="item" href="http://p.fdzh.org">代码粘贴板</a>
+            <a class="item" href="http://slides.fdzh.org">云端泡泡糖</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">下载</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://getfedora.org/zh_CN/workstation/download/">Fedora Workstation</a>
+            <a class="item" href="https://getfedora.org/zh_CN/server/download/">Fedora Server</a>
+            <a class="item" href="https://getfedora.org/zh_CN/cloud/download">Fedora Cloud</a>
+            <a class="item" href="https://spins.fedoraproject.org/">Fedora 定制版</a>
+            <a class="item" href="https://labs.fedoraproject.org/">Fedora 实验室</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header"><a href="http://utfb.fdzh.org">支持</a></h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://fedoraproject.org/wiki/Fedora_Project_Wiki/zh-cn">WiKi</a>
+            <a class="item" href="https://docs.fedoraproject.org/">文档</a>
+            <a class="item" href="http://hack.fdzh.org/ask">问答</a>
+            <a class="item" href="http://irc.fdzh.org">IRC</a>
+            <a class="item" href="http://fdzh.org/mailinglist">邮件列表</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui two column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">其他</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="http://weibo.com/fdzhorg"><i class="weibo icon"></i> Weibo</a>
+            <a class="item" href="https://github.com/FZUG"><i class="github icon"></i> GitHub</a>
+            <a class="item" href="http://www.fdzh.org/feed.xml"><i class="rss icon"></i> Feed</a>
+            <a class="item" href="http://hub.fdzh.org"><i class="cube icon"></i> Hub</a>
+            <a class="item" href="http://home.fdzh.org"><i class="h icon"></i> Home</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">友情推荐</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://coding.net/">Coding</a>
+            <a class="item" href="http://www.ucloud.cn/?ref=fdzh.org">UCloud</a>
+            <a class="item" href="http://1.qinghuai.org/">中国版 Hacker News</a>
+            <a class="item" href="http://linuxstory.org/?ref=fdzh.org">Linux Story</a>
+            <a class="item" href="http://tieba.baidu.com/f?kw=fedora">Fedora百度贴吧</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui center aligned segment copyright">
+  由 <a href='https://coding.net/u/tvvocold/p/fdzh.org/git'>Coding</a> 强力驱动  |  <i class="world icon"> </i> 除特别说明外，用户内容均采用<a href='http://creativecommons.org/licenses/by-sa/3.0/cn/'>知识共享署名-相同方式共享 3.0 中国大陆许可协议</a>进行许可  |  <i class="comment icon"></i><a href='mailto:ray@fdzh.org'>反馈</a>  |  <i class="shield icon"></i><a href='http://www.fdzh.org/TOS'>条款</a> |  <i class="user icon"></i><a href='http://www.fdzh.org/privacy/'>隐私权</a>
+</div>
+
+    
+    </div> <!-- pusher -->
+    
+
+    
+<!-- Cannot make async calls for jQuery or Semantic. Breaks Cards, Page Bar, others. -->
+<script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+<script src="//dn-fdzhcdn.qbox.me/semantic.min.js"></script>
+<script type='text/javascript' src='/js/jquery.particleground.min.js'></script>
+<script type='text/javascript' src='/js/cool.js'></script>
+<script language=javascript>
+function google() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'http://guge.party/search?q=site:fdzh.org ' + q.value;
+        if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
+            location.href = url;
+        } else {
+            window.open(url, "_blank");
+        }
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+
+
+
+    <script>
+    $(document).ready(function() {
+    
+      $(".time").text(function (index, value) {
+        return Math.round(parseFloat(value));
+      });
+      
+    });
+    </script>
+    
+   
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"171.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+ 
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47480129-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+ </body>
+
+</html>

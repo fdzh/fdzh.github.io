@@ -1,0 +1,834 @@
+  <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns#">
+
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <!-- Site Properities -->
+  
+    
+  
+  
+  <title>Embeds - fdzh.org </title>
+  <link rel="canonical" href="http://www.fdzh.org/embeds/">
+  
+  <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+  
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="http://www.fdzh.org/embeds/">
+  <meta property="og:title" content="Embeds">
+  <meta property="og:site_name" content="fdzh.org">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="http://www.fdzh.org">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="300">
+
+  
+  
+  <meta property="og:type" content="website" />
+  
+  
+  <meta name="description" content="">
+  <meta name="keywords" content="fedora,fedora linux,fedora中国,fedora中文,fedora 21,fedora 22,fedora中文社区">
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+  <script src="//dn-copr.qbox.me/topbar.js"></script>
+  <script src="//dn-copr.qbox.me/prettify.min.js"></script>
+  <link href="//7o51u6.com1.z0.glb.clouddn.com/jbardemo.css" rel="stylesheet">
+  <script src="//7o51u6.com1.z0.glb.clouddn.com/jbar.js"></script>
+  <!-- Common Styles -->
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/1.5.0/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+  <link href='//fonts.fdzh.org/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/flexslider/2.2.2/flexslider-min.css">
+  <script>
+      $(function() {
+          prettyPrint()
+          function resetToDefaults() {
+            topbar.config({
+              autoRun      : true,
+              barThickness : 3,
+              barColors    : {
+                '0'      : 'rgba(26,  188, 156, .9)',
+                '.25'    : 'rgba(52,  152, 219, .9)',
+                '.50'    : 'rgba(241, 196, 15,  .9)',
+                '.75'    : 'rgba(230, 126, 34,  .9)',
+                '1.0'    : 'rgba(211, 84,  0,   .9)'
+              },
+              shadowBlur   : 10,
+              shadowColor  : 'rgba(0,   0,   0,   .6)'
+            })
+          }
+
+          // Page load
+          resetToDefaults()
+          topbar.show()
+          setTimeout(function() {
+            $('#main_content').fadeIn('slow')
+            topbar.hide()
+          }, 1500)
+
+          
+
+          // Advanced Demo
+          $('#btnStartAdvanced').click(function() {
+            resetToDefaults()
+            topbar.config({
+              autoRun      : false, 
+              barThickness : 5,
+              barColors    : {
+                  '0'      : 'rgba(26,  188, 156, .7)',
+                  '.3'     : 'rgba(41,  128, 185, .7)',
+                  '1.0'    : 'rgba(231, 76,  60,  .7)'
+              },
+              shadowBlur   : 5,
+              shadowColor  : 'rgba(0, 0, 0, .5)'
+            })
+            topbar.show();
+            (function step() {
+              setTimeout(function() {  
+                if (topbar.progress('+.01') < 1) step()
+              }, 16)
+            })()
+          })
+          $('#btnStopAdvanced').click(function() {
+            topbar.hide()  
+          })
+      })
+    </script>
+  
+
+<style>
+.ui.menu:first-child {
+margin-top: 0;
+background-color: rgba(255,255,255,0.3);
+}
+
+.ui.menu{
+  background:none;
+}
+ 
+  #particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #16a085;
+    position: absolute;
+    padding-bottom:10rem;
+  }
+  .segmentss {
+      text-align:center;
+      color:#fff;
+      padding:1rem;
+  }
+  .segmentss h1 {
+      text-align:center;
+  } 
+  .tmtltle {
+    margin-bottom：5rem;
+    font-size:1.4rem;
+  }
+  .tmtltle h1 {
+    padding: 30px 0 0 0;
+    line-height: 1.2;
+    text-align:center;
+  }
+  .tmtltle h2 a{
+    color:blue;
+  }
+  .global .header-3d {
+    color: #000;
+    line-height:10.5rem;
+    font-size:2.2rem;
+    text-shadow:none;
+}
+  }
+  .tmtltle h2 {
+    margin-bottom：15rem !important;
+    text-align:center !important;
+  }
+  
+  #what-fedora-is-for {
+    line-height: 1.2;
+    
+    margin-bottom: 20px;
+    color: #000;
+    width: 250px;
+    text-align: left
+}
+
+}
+</style>
+ 
+
+
+  </head>
+  <body class="global landing">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+
+    
+    
+
+    <div class="pusher">
+    
+        
+          <!-- masthead -->
+<div class="ui masthead segment blue-round-gradient">
+  <div class="ui page grid">
+    <div class="column">
+        
+        <div class="ui menu">
+  <a class="header item" href="/">Home</a>
+  <div class="right menu">
+    <a class="item menu-details " href="http://hack.fdzh.org" target="_blank" data-position="bottom left" data-content="For Hacker"><i class="users icon"></i>Hack</a>
+    <a class="item menu-details " href="/blog/"  data-position="bottom left" data-content="For Blogger"><i class="idea icon"></i>Blog</a>
+    <a class="item menu-details " href="http://repo.fdzh.org" target="_blank" data-position="bottom left" data-content="For User"><i class="shop icon"></i>Repo</a>
+    <a class="item menu-details " href="https://github.com/fzug" target="_blank" data-position="bottom left" data-content="For Packager"><i class="github icon"></i>GitHub</a>
+    <a class="item menu-details active" href="http://p.fdzh.org" target="_blank" data-position="bottom left" data-content="For Coder"><i class="write square icon"></i>Paste</a>
+    <a class="item menu-details active" href="http://slides.fdzh.org" target="_blank" data-position="bottom left" data-content="For Teacher"><i class="wizard icon"></i>Slides</a>
+    
+    <div class="item">
+      <div class="ui transparent mini icon input">
+        <form onsubmit="return google()" _lpchecked="1"><input type="text" placeholder="$ find . " maxlength="40" name="q" id="q" value=""></form>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- information -->
+        <div class="ui information">
+          <h1 class="header-3d">Embeds</h1>
+          <h2 class="slim-header-light">Reusable Embed Plugins Designed For OpenTheme</h2>
+        </div> 
+        <!-- /information -->
+    </div>
+  </div>
+</div>
+<!-- /masthead -->
+
+        
+        <div class="ui vertical segment">
+  <div class="ui centered page grid">
+    <div class="row">
+      <div class="column">
+      <div class="ui two column stackable grid special cards">
+
+
+  
+
+
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/theme/2014/11/29/starter-post-twitter-embed/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/twitter-bird.jpg" alt="Embedded Tweets">
+      </div>
+      <div class="content">
+        <div class="header"><i class="twitter icon"></i> Embedded Tweets</div>
+        <div class="meta">
+          <div class="group">
+            Social
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          An Embedded Tweet brings brings the best content created on Twitter into your article or website.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          
+          
+        <div class="right floated created">
+          <a href="https://dev.twitter.com/web/embedded-tweets"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://twitter.com/"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/theme/2014/12/01/starter-post/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/addthis.png" alt="AddThis Social Buttons">
+      </div>
+      <div class="content">
+        <div class="header"><i class="facebook icon"></i> AddThis Social Buttons</div>
+        <div class="meta">
+          <div class="group">
+            Social
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          Social sharing buttons from AddThis service. Fast, configurable, responsive social sharing buttons.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          <i class="globe icon embed-features" data-content="Site Configurable" data-position="top left"></i>
+          
+          
+          
+        <div class="right floated created">
+          <a href="https://www.addthis.com/blog"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://www.addthis.com/dashboard"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/workflow/2014/11/26/open-cloud-based-workflow-for-designing-your-website/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/disqus-splash.png" alt="Disqus Social">
+      </div>
+      <div class="content">
+        <div class="header"><i class="share alternate square icon"></i> Disqus Social</div>
+        <div class="meta">
+          <div class="group">
+            Social
+            <div class="ui star rating right floated" data-rating="4"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          If you’re passionate about writing and sharing, Disqus helps you build an active community.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          <i class="globe icon embed-features" data-content="Site Configurable" data-position="top left"></i>
+          
+          
+          
+        <div class="right floated created">
+          <a href="https://disqus.com/websites/"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://disqus.com/admin/signup/?utm_source=New-Site"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/theme/2014/11/24/starter-post-media-embed/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/youtube-splash.png" alt="YouTube Video">
+      </div>
+      <div class="content">
+        <div class="header"><i class="film icon"></i> YouTube Video</div>
+        <div class="meta">
+          <div class="group">
+            Video
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          Embed YouTube video player using custom OpenTheme embed tag. Player features are site configurable.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          
+          <i class="file icon embed-features" data-content="Post Configurable" data-position="top left"></i>
+          
+          
+        <div class="right floated created">
+          <a href="https://support.google.com/youtube/answer/171780?hl=en"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://www.youtube.com/"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/apps/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/uservoice.png" alt="UserVoice">
+      </div>
+      <div class="content">
+        <div class="header"><i class="announcement icon"></i> UserVoice</div>
+        <div class="meta">
+          <div class="group">
+            Social
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          User feedback, idea voting, customer helpdesk and support widget that can be added to any page.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          <i class="globe icon embed-features" data-content="Site Configurable" data-position="top left"></i>
+          
+          
+          
+        <div class="right floated created">
+          <a href="https://developer.uservoice.com/"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://www.uservoice.com/"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/theme/2014/12/05/starter-post-google-map-embed/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/map.png" alt="Google Map">
+      </div>
+      <div class="content">
+        <div class="header"><i class="pin icon"></i> Google Map</div>
+        <div class="meta">
+          <div class="group">
+            Map
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          You can embed Google maps using custom embed created for OpenTheme. Just provide location.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          
+          <i class="file icon embed-features" data-content="Post Configurable" data-position="top left"></i>
+          
+          
+        <div class="right floated created">
+          <a href="https://developers.google.com/maps/documentation/embed/guide"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://developers.google.com/maps/documentation/embed/start"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/panoramio/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/panoramio.png" alt="Panoramio Maps">
+      </div>
+      <div class="content">
+        <div class="header"><i class="pin icon"></i> Panoramio Maps</div>
+        <div class="meta">
+          <div class="group">
+            Map
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          Add geo-tagged photo search to maps, along with autocomplete places search. Reusable layout.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          
+          
+          <i class="grid layout icon embed-features" data-content="Layout Configurable" data-position="top left"></i>
+          
+        <div class="right floated created">
+          <a href="https://developers.google.com/maps/documentation/embed/start"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="/panoramio/"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="http://opentheme.co">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/mailchimp.png" alt="MailChimp">
+      </div>
+      <div class="content">
+        <div class="header"><i class="mail icon"></i> MailChimp</div>
+        <div class="meta">
+          <div class="group">
+            Mail
+            <div class="ui star rating right floated" data-rating="3"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          Add MailChimp signup forms with OpenTheme UI. Reuse across site with text variations.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          
+          <i class="file icon embed-features" data-content="Post Configurable" data-position="top left"></i>
+          
+          
+        <div class="right floated created">
+          <a href="http://mailchimp.com/resources/"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="http://mailchimp.com/"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/apps/">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/flexslider.png" alt="FlexSlider">
+      </div>
+      <div class="content">
+        <div class="header"><i class="play icon"></i> FlexSlider</div>
+        <div class="meta">
+          <div class="group">
+            Media
+            <div class="ui star rating right floated" data-rating="4"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          An awesome, fully responsive jQuery slider toolkit. Custom OpenTheme layout, include, and demo.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          
+          
+          <i class="grid layout icon embed-features" data-content="Layout Configurable" data-position="top left"></i>
+          
+        <div class="right floated created">
+          <a href="http://www.woothemes.com/flexslider/"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="/apps/"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="dimmable image">
+        <div class="ui inverted dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui primary button" href="/search/?q=theme">View Example</a>
+            </div>
+          </div>
+        </div>
+        <img src="/img/embed/google-cse.png" alt="Google Custom Search">
+      </div>
+      <div class="content">
+        <div class="header"><i class="search icon"></i> Google Custom Search</div>
+        <div class="meta">
+          <div class="group">
+            Search
+            <div class="ui star rating right floated" data-rating="5"></div>
+          </div>
+          
+        </div>
+        <div class="description">
+          Google custom search engine enables powerful search features for GitHub Pages websites.
+        </div>
+      </div>
+  
+      <div class="extra content">
+          
+          <i class="expand icon embed-features" data-content="Mobile Responsive" data-position="top left"></i>
+          
+          
+          <i class="github icon embed-features" data-content="GitHub Friendly" data-position="top left"></i>
+          
+          
+          <i class="globe icon embed-features" data-content="Site Configurable" data-position="top left"></i>
+          
+          
+          
+        <div class="right floated created">
+          <a href="https://www.google.co.in/cse/docs/all"><i class="question icon embed-features" data-content="Learn More" data-position="top right"></i></a> | 
+          <a href="https://www.google.co.in/cse/all"><i class="wizard icon embed-features" data-content="Create Embed" data-position="top right"></i></a>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div> <!-- .column -->
+
+</div>  
+      </div>
+    </div> <!-- /row -->
+  </div>
+</div>
+
+
+        <div class="ui inverted footer vertical segment">
+  <div class="ui stackable page grid">
+    <div class="ten wide column">
+      <div class="ui three column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">子站</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="http://hack.fdzh.org">Hack 社区</a>
+            <a class="item" href="https://copr.fedoraproject.org">Copr 构建系统</a>
+            <a class="item" href="http://repo.fdzh.org">社区软件源</a>
+            <a class="item" href="http://p.fdzh.org">代码粘贴板</a>
+            <a class="item" href="http://slides.fdzh.org">云端泡泡糖</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">下载</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://getfedora.org/zh_CN/workstation/download/">Fedora Workstation</a>
+            <a class="item" href="https://getfedora.org/zh_CN/server/download/">Fedora Server</a>
+            <a class="item" href="https://getfedora.org/zh_CN/cloud/download">Fedora Cloud</a>
+            <a class="item" href="https://spins.fedoraproject.org/">Fedora 定制版</a>
+            <a class="item" href="https://labs.fedoraproject.org/">Fedora 实验室</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header"><a href="http://utfb.fdzh.org">支持</a></h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://fedoraproject.org/wiki/Fedora_Project_Wiki/zh-cn">WiKi</a>
+            <a class="item" href="https://docs.fedoraproject.org/">文档</a>
+            <a class="item" href="http://hack.fdzh.org/ask">问答</a>
+            <a class="item" href="http://irc.fdzh.org">IRC</a>
+            <a class="item" href="http://fdzh.org/mailinglist">邮件列表</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui two column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">其他</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="http://weibo.com/fdzhorg"><i class="weibo icon"></i> Weibo</a>
+            <a class="item" href="https://github.com/FZUG"><i class="github icon"></i> GitHub</a>
+            <a class="item" href="http://www.fdzh.org/feed.xml"><i class="rss icon"></i> Feed</a>
+            <a class="item" href="http://hub.fdzh.org"><i class="cube icon"></i> Hub</a>
+            <a class="item" href="http://home.fdzh.org"><i class="h icon"></i> Home</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">友情推荐</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://coding.net/">Coding</a>
+            <a class="item" href="http://www.ucloud.cn/?ref=fdzh.org">UCloud</a>
+            <a class="item" href="http://1.qinghuai.org/">中国版 Hacker News</a>
+            <a class="item" href="http://linuxstory.org/?ref=fdzh.org">Linux Story</a>
+            <a class="item" href="http://tieba.baidu.com/f?kw=fedora">Fedora百度贴吧</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui center aligned segment copyright">
+  由 <a href='https://coding.net/u/tvvocold/p/fdzh.org/git'>Coding</a> 强力驱动  |  <i class="world icon"> </i> 除特别说明外，用户内容均采用<a href='http://creativecommons.org/licenses/by-sa/3.0/cn/'>知识共享署名-相同方式共享 3.0 中国大陆许可协议</a>进行许可  |  <i class="comment icon"></i><a href='mailto:ray@fdzh.org'>反馈</a>  |  <i class="shield icon"></i><a href='http://www.fdzh.org/TOS'>条款</a> |  <i class="user icon"></i><a href='http://www.fdzh.org/privacy/'>隐私权</a>
+</div>
+
+    
+    </div>
+    
+
+    
+<!-- Cannot make async calls for jQuery or Semantic. Breaks Cards, Page Bar, others. -->
+<script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+<script src="//dn-fdzhcdn.qbox.me/semantic.min.js"></script>
+<script type='text/javascript' src='/js/jquery.particleground.min.js'></script>
+<script type='text/javascript' src='/js/cool.js'></script>
+<script language=javascript>
+function google() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'http://guge.party/search?q=site:fdzh.org ' + q.value;
+        if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
+            location.href = url;
+        } else {
+            window.open(url, "_blank");
+        }
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+
+
+ 
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47480129-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+
+</html>
