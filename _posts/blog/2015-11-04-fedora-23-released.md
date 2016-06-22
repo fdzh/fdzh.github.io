@@ -3,7 +3,7 @@ layout: post
 author: Bootingman
 category: blog
 title:  迟到的万圣节大餐 － Fedora 23 正式发布！ 
-tags: top fedora-23           
+tags: fedora-23           
 image: http://7o51u6.com1.z0.glb.clouddn.com/fedora-23-release-755x350.jpg
 ---
 

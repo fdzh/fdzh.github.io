@@ -1,0 +1,639 @@
+  <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns#">
+
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <!-- Site Properities -->
+  
+    
+  
+  
+  <title>Fedora 24 正式发布 - fdzh.org </title>
+  <link rel="canonical" href="http://www.fdzh.org/blog/2016/06/22/fedora-24/">
+  
+  <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+  
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="http://www.fdzh.org/blog/2016/06/22/fedora-24/">
+  <meta property="og:title" content="Fedora 24 正式发布">
+  <meta property="og:site_name" content="fdzh.org">
+  <meta property="og:description" content="The Fedora Project 正式宣布发布 Fedora 24，你可以在 Fedora 官网 下载。">
+  <meta property="og:image" content="http://www.fdzh.orghttps://dn-coding-net-production-pp.qbox.me/fd50407f-7767-4065-a4d2-6144d4e35c3a.jpg">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="300">
+
+  
+  
+  <meta property="og:type" content="article" />
+  
+  
+  <meta name="description" content="The Fedora Project 正式宣布发布 Fedora 24，你可以在 Fedora 官网 下载。">
+  <meta name="keywords" content="fedora-24, top, blog">
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+  <script src="//dn-copr.qbox.me/topbar.js"></script>
+  <script src="//dn-copr.qbox.me/prettify.min.js"></script>
+  <link href="//dn-copr.qbox.me/jbardemo.css" rel="stylesheet">
+  <script src="//dn-copr.qbox.me/jbar.js"></script>
+  <!-- Common Styles -->
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/1.5.0/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+  <link href='//fonts.gmirror.org/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="//dn-copr.qbox.me/flexslider-min.css">
+  <script>
+      $(function() {
+          prettyPrint()
+          function resetToDefaults() {
+            topbar.config({
+              autoRun      : true,
+              barThickness : 3,
+              barColors    : {
+                '0'      : 'rgba(26,  188, 156, .9)',
+                '.25'    : 'rgba(52,  152, 219, .9)',
+                '.50'    : 'rgba(241, 196, 15,  .9)',
+                '.75'    : 'rgba(230, 126, 34,  .9)',
+                '1.0'    : 'rgba(211, 84,  0,   .9)'
+              },
+              shadowBlur   : 10,
+              shadowColor  : 'rgba(0,   0,   0,   .6)'
+            })
+          }
+
+          // Page load
+          resetToDefaults()
+          topbar.show()
+          setTimeout(function() {
+            $('#main_content').fadeIn('slow')
+            topbar.hide()
+          }, 1500)
+
+          
+
+          // Advanced Demo
+          $('#btnStartAdvanced').click(function() {
+            resetToDefaults()
+            topbar.config({
+              autoRun      : false, 
+              barThickness : 5,
+              barColors    : {
+                  '0'      : 'rgba(26,  188, 156, .7)',
+                  '.3'     : 'rgba(41,  128, 185, .7)',
+                  '1.0'    : 'rgba(231, 76,  60,  .7)'
+              },
+              shadowBlur   : 5,
+              shadowColor  : 'rgba(0, 0, 0, .5)'
+            })
+            topbar.show();
+            (function step() {
+              setTimeout(function() {  
+                if (topbar.progress('+.01') < 1) step()
+              }, 16)
+            })()
+          })
+          $('#btnStopAdvanced').click(function() {
+            topbar.hide()  
+          })
+      })
+    </script>
+  
+
+<style>
+.ui.menu:first-child {
+margin-top: 0;
+background-color: rgba(255,255,255,0.3);
+}
+
+.ui.menu{
+  background:none;
+}
+ 
+  #particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #16a085;
+    position: absolute;
+    padding-bottom:10rem;
+  }
+  .segmentss {
+      text-align:center;
+      color:#fff;
+      padding:1rem;
+  }
+  .segmentss h1 {
+      text-align:center;
+  } 
+  .tmtltle {
+    margin-bottom：5rem;
+    font-size:1.4rem;
+  }
+  .tmtltle h1 {
+    padding: 30px 0 0 0;
+    line-height: 1.2;
+    text-align:center;
+  }
+  .tmtltle h2 a{
+    color:blue;
+  }
+  .global .header-3d {
+    color: #000;
+    line-height:10.5rem;
+    font-size:2.2rem;
+    text-shadow:none;
+}
+  }
+  .tmtltle h2 {
+    margin-bottom：15rem !important;
+    text-align:center !important;
+  }
+  
+  #what-fedora-is-for {
+    line-height: 1.2;
+    
+    margin-bottom: 20px;
+    color: #000;
+    width: 250px;
+    text-align: left
+}
+
+}
+</style>
+
+
+  <style>
+  .post .postbar {
+    margin: 0em;
+    padding: 1rem;
+  }
+  
+  .post .postbar .column {
+    margin-bottom: 1em;
+  }
+  
+  .post .image {
+    margin-bottom: 1em;
+  }
+
+  </style>
+
+  </head>
+  
+  <body class="global post">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+    
+    
+    
+
+    <div class="pusher">
+    
+        <!-- posthead -->
+<div class="ui masthead segment symphony">
+  <div class="ui page grid">
+    <div class="column">
+        
+        <div class="ui menu">
+  <a class="header item" href="/">Home</a>
+  <div class="right menu">
+    <a class="item menu-details " href="http://hack.fdzh.org" target="_blank" data-position="bottom left" data-content="For Hacker"><i class="users icon"></i>Hack</a>
+    <a class="item menu-details " href="/blog/"  data-position="bottom left" data-content="For Blogger"><i class="idea icon"></i>Blog</a>
+    <a class="item menu-details " href="http://repo.fdzh.org" target="_blank" data-position="bottom left" data-content="For User"><i class="shop icon"></i>Repo</a>
+    <a class="item menu-details " href="https://github.com/fzug" target="_blank" data-position="bottom left" data-content="For Packager"><i class="github icon"></i>GitHub</a>
+    <a class="item menu-details " href="http://p.fdzh.org" target="_blank" data-position="bottom left" data-content="For Coder"><i class="write square icon"></i>Paste</a>
+    <a class="item menu-details " href="http://slides.fdzh.org" target="_blank" data-position="bottom left" data-content="For Teacher"><i class="wizard icon"></i>Slides</a>
+    
+    <div class="item">
+      <div class="ui transparent mini icon input">
+        <form onsubmit="return google()" _lpchecked="1"><input type="text" placeholder="$ find . " maxlength="40" name="q" id="q" value=""></form>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- information -->
+        <div class="ui information">
+          <a href="/blog/2016/06/22/fedora-24/">
+          <h1 class="ui header">
+            Fedora 24 正式发布
+          </h1>
+          </a>
+          <h2>The Fedora Project 正式宣布发布 Fedora 24，你可以在 Fedora 官网 下载。
+
+</h2>
+          <p>
+            <i class="icon calendar"></i> Jun 22, 2016
+             • <i class="edit icon"></i> Matthew Miller
+            
+            
+              <!-- Based on https://andytaylor.me/2013/04/07/reading-time/ -->
+              
+              
+               • <i class="icon clock"></i> ~ <span class="time">1</span> min to read
+              
+            
+
+            
+              • <i class="icon tags"></i> 
+              
+                <a class="ui tag label mini purple" href="/tag/#fedora-24">fedora-24</a>
+              
+                <a class="ui tag label mini purple" href="/tag/#top">top</a>
+              
+            
+          </p>
+
+          
+        </div> 
+        <!-- /information -->
+    </div>
+  </div>
+</div>
+<!-- /posthead -->
+
+        <div class="ui vertical segment">
+          <div class="ui very relaxed stackable page grid">
+            
+            <div class="ten wide column">
+            
+                
+                <img class="ui rounded image" src="https://dn-coding-net-production-pp.qbox.me/fd50407f-7767-4065-a4d2-6144d4e35c3a.jpg" alt="Fedora 24 正式发布">
+                
+                <p>The Fedora Project 正式宣布发布 Fedora 24，你可以在 <a href="https://getfedora.org">Fedora 官网</a> 下载。</p>
+
+<h4 id="fedora-">Fedora 之旅的另一步</h4>
+<p>The Fedora Project 开始与一段伟大的旅程…重新定义一款适用于普通用户和开发者的操作系统。
+这个系统不是一天建成的， Fedora 24 是在这个旅程的一步。但这并不意味着这是一个“临时”的版本释出；这个版本为 Fedora 用户准备很多强大的新功能。</p>
+
+<h4 id="workstation-">Workstation 工作站版本</h4>
+
+<p>Fedora 24 工作站版本更新到 GNOME 3.20, 与许多可用性改进，如更易用的输入设备和打印机设置，更友好的搜索界面，键盘命令的快捷窗口，更方便的音乐控制系统。</p>
+
+<p>Flatpak (前身为 xdg-app) 是另一种内嵌功能，是软件可以追踪 Flatpaks 并添加更多的功能，将来随着技术的发展。该软件也增加了功能，以提供一个完整的系统，直接从桌面从一个版本的到下一个 Fedora，并提供标签以及升级了现有软件的评论功能。</p>
+
+<p>Fedora 24 继续着 X 的替代品, Wayland, 新一代的图形堆栈的工作。 尽管这个版本不会默认使用 Wayland，但它包括了许多改进，可以作为用户一个选项来尝试，并有望在 Fedora 25 正式启用。</p>
+
+<h4 id="server-">Server 服务器版本</h4>
+
+<p>Fedora 24 的 Server 版本更精简了，引入了更多的模块，这将成为未来的 Fedora 版本中的一个重要因素，甚至如不必要的包被拆除，并安装时一个更小的 footprint。 </p>
+
+<p>FreeIPA 4.3 是 Fedora 24 服务器版本的一大特色。 FreeIPA 是一个安全信息管理解决方案的集成。该新版 FreeIPA 的功能简化了副本安装和改进了复制技术的管理。</p>
+
+<h4 id="cloud-">Cloud 云版本</h4>
+
+<p>Fedora 正致力于成为管理集装箱应用的最佳平台，从基础的 Fedora 容器镜像，到一个全功能的平台即服务的形式来运行和管理它们。</p>
+
+<p>随着我们在征程上的前行，我们正在包装 OpenShift Origin，使其更容易部署。 OpenShift Origin 是一个围绕 Kubernetes 的平台即服务，生产级容器编排项目服务体系。 OpenShift Origin 致力于应用开发和部署优化。 Origin 可以让开发人员很容易地开始构建在容器中的应用程序和运营商，并管理它们。</p>
+
+<h4 id="spins-and-labs">Spins and Labs</h4>
+<p>Fedora Spins and Labs 是提供了定制化的 Fedora 版本。Fedora 24 Labs Spins，涵盖了基于 Fedora 的 KDE Plasma, Xfce, LXDE, Mate-Compiz, 和 Cinnamon 发行版。Fedora Labs 提供了特殊用途的 Fedora 版本，如游戏，机器。</p>
+
+<h4 id="arm">ARM</h4>
+<p>本次早产释出了 ARM image，此外，桌面系统如 Spins 和 Workstation 也提供了 image 下载。最小化的 image 为你的 ARM 板提供了很多尽可能多的功能下载可选项。</p>
+
+<h4 id="fedora--1">让 Fedora 越来越好</h4>
+
+<p>如果你想为 Fedora 做出贡献， 有很多角色你可以参加。访问 http://whatcanidoforfedora.org/ 看看吧！</p>
+
+
+                 <!-- Pagination -->   
+<div class="ui 2 fluid basic buttons">
+   
+  <a class="ui labeled icon button" href="/blog/2016/05/11/fedora-24-beta/" 
+    title="Fedora 24 Beta 发布">
+    <i class="left arrow icon"></i>
+    Previous Post
+  </a>
+   
+   
+</div>
+
+<div class="ui minimal demo button"><a href='javascript:window.location=%22http://hack.fdzh.org/submitlink?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)'>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小提示：点此在 Fedora Hack 发布/评论/赞赏本文 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </a></div>
+                
+                  <div class="ui divider"></div>
+                  <!-- Disqus Comments -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                
+
+            </div>
+            
+            <div class="six wide column">
+                <div class="ui segment inverted postbar dark-wood">
+
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">邮件周刊（每周五推送）</h3>
+        <div class="ui inverted divider"></div>
+        
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup" class="ui form segment">
+  <form action="//fdzh.us8.list-manage.com/subscribe/post?u=47617a7ddf39f5eb98420023a&amp;id=e507ff23b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <p>不想错过精彩内容? 输入邮箱: </p>
+    <div class="field">
+      <div class="ui left icon input">
+        <i class="user icon"></i>
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="name@email.com">
+    	</div>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_47617a7ddf39f5eb98420023a_e507ff23b2" tabindex="-1" value=""></div>
+        <input type="submit" value="立即订阅吧!（免费）" name="subscribe" id="mc-embedded-subscribe" class="ui fluid purple submit newsletter button">
+    </div>
+  </form>
+    <div class="ui error message"></div>
+</div>
+
+<!--End mc_embed_signup-->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">相关推荐</h3>
+        <div class="ui inverted divider"></div>
+        <div class="ui inverted animated selection list">
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/11/04/fedora-23-released/">
+      <div class="recent-posts-title">迟到的万圣节大餐 － Fedora 23 正式发布！</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://7o51u6.com1.z0.glb.clouddn.com/fedora-23-release-755x350.jpg" alt="迟到的万圣节大餐 － Fedora 23 正式发布！">
+      </div>
+      
+      <div class="right floated"><small>Nov 4, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/01/17/fedora-21-beijing/">
+      <div class="recent-posts-title">Fedora 21 发行派对北京站</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="https://farm8.staticflickr.com/7521/16107452159_f20bace582_c.jpg" alt="Fedora 21 发行派对北京站">
+      </div>
+      
+      <div class="right floated"><small>Jan 17, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#blog">blog</a>
+    <a class="item" href="/blog/2015/07/11/verify-fedora22/">
+      <div class="recent-posts-title">Windows 下校验 Fedora 安装文件</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="http://7o51u6.com1.z0.glb.clouddn.com/1295684929_ddvip_2818.png" alt="Windows 下校验 Fedora 安装文件">
+      </div>
+      
+      <div class="right floated"><small>Jul 11, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#slides">slides</a>
+    <a class="item" href="/slides/2015/05/15/repo-ucloud/">
+      <div class="recent-posts-title">Fedora 中文社区软件源发布+福利第三波</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="https://dn-copr.qbox.me/20150608001953.png" alt="Fedora 中文社区软件源发布+福利第三波">
+      </div>
+      
+      <div class="right floated"><small>May 15, 2015</small></div>
+    </a>
+  
+  
+  
+    <a class="ui ribbon small label"  href="/category/#slides">slides</a>
+    <a class="item" href="/slides/2015/06/20/linux-distr/">
+      <div class="recent-posts-title">Linux 发行版是什么，它又与Linux内核有什么联系？</div>
+      
+      <div class="thumb-img">
+        <img class="ui rounded image" src="https://dn-copr.qbox.me/49d503bf47879ffe8a169dd81c744d83_b.jpg" alt="Linux 发行版是什么，它又与Linux内核有什么联系？">
+      </div>
+      
+      <div class="right floated"><small>Jun 20, 2015</small></div>
+    </a>
+  
+  
+</div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">标签</h3>
+        <div class="ui inverted divider"></div>
+        
+<a class="ui tag mini label orange" href="/tag/#fedora-21">fedora-21 <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#party">party <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#uhadoop">uhadoop <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#repo">repo <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#fedora-22">fedora-22 <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#f6a">f6a <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#LFS101x">LFS101x <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#lfs101x">lfs101x <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#Linux家族">Linux家族 <div class="detail">1</div></a>
+
+<a class="ui tag mini label orange" href="/tag/#linux">linux <div class="detail">1</div></a>
+
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">分类</h3>
+        <div class="ui inverted divider"></div>
+        
+  <a class="ui small label categories" href="/category/#blog">blog <div class="detail">11</div></a>
+
+  <a class="ui small label categories" href="/category/#slides">slides <div class="detail">5</div></a>
+
+
+      </div>
+    </div> <!-- /row -->
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">Ad</h3>
+        <div class="ui inverted divider"></div>
+        <a class="ui rounded image" href="https://coding.net/?ref=fdzh.org" target="_blank"><img src="https://dn-copr.qbox.me/coding_ad.png" border="0" width="500" height="200" alt="coding"></a>
+
+      </div>
+    </div>
+</div>
+
+            </div>
+            
+          </div>
+        </div>
+        
+<div class="ui inverted footer vertical segment">
+  <div class="ui stackable page grid">
+    <div class="ten wide column">
+      <div class="ui three column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">子站</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="http://hack.fdzh.org">Hack 社区</a>
+            <a class="item" href="http://www.fdzh.org/blog">Blog</a>
+            <a class="item" href="http://repo.fdzh.org">社区软件源</a>
+            <a class="item" href="http://p.fdzh.org">代码粘贴板</a>
+            <a class="item" href="http://slides.fdzh.org">云端泡泡糖</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">下载</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://getfedora.org/zh_CN/workstation/download/">Fedora Workstation</a>
+            <a class="item" href="https://getfedora.org/zh_CN/server/download/">Fedora Server</a>
+            <a class="item" href="https://getfedora.org/zh_CN/cloud/download">Fedora Cloud</a>
+            <a class="item" href="https://spins.fedoraproject.org/">Fedora 定制版</a>
+            <a class="item" href="https://labs.fedoraproject.org/">Fedora 实验室</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header"><a href="http://utfb.fdzh.org">支持</a></h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://fedoraproject.org/wiki/Fedora_Project_Wiki/zh-cn">WiKi</a>
+            <a class="item" href="https://docs.fedoraproject.org/">文档</a>
+            <a class="item" href="http://hack.fdzh.org/ask">问答</a>
+            <a class="item" href="http://irc.fdzh.org">IRC</a>
+            <a class="item" href="http://fdzh.org/mailinglist">邮件列表</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui two column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">其他</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="http://weibo.com/fdzhorg"><i class="weibo icon"></i> Weibo</a>
+            <a class="item" href="https://github.com/FZUG"><i class="github icon"></i> GitHub</a>
+            <a class="item" href="http://www.fdzh.org/feed.xml"><i class="rss icon"></i> Feed</a>
+            <a class="item" href="http://hub.fdzh.org"><i class="cube icon"></i> Hub</a>
+            <a class="item" href="http://home.fdzh.org"><i class="h icon"></i> Home</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">友情推荐</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://lug.ustc.edu.cn/wiki/">科大 LUG</a>
+            <a class="item" href="http://www.ucloud.cn/?ref=fdzh.org">UCloud</a>
+<a class="item" href="http://ch.arguman.org"> 论点分析平台 </a>            
+<a class="item" href="http://linuxstory.org/?ref=fdzh.org">Linux Story</a>
+            <a class="item" href="http://tieba.baidu.com/f?kw=fedora">Fedora百度贴吧</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui center aligned segment copyright">
+  由 <a href='https://coding.net/u/tvvocold/p/fdzh.org/git'>Coding</a> 强力驱动  |  <i class="world icon"> </i> 除特别说明外，用户内容均采用<a href='http://creativecommons.org/licenses/by-sa/3.0/cn/'>知识共享署名-相同方式共享 3.0 中国大陆许可协议</a>进行许可  |  <i class="comment icon"></i><a href='mailto:ray@fdzh.org'>反馈</a>  |  <i class="shield icon"></i><a href='http://www.fdzh.org/TOS'>条款</a> |  <i class="user icon"></i><a href='http://www.fdzh.org/privacy/'>隐私权</a>
+</div>
+
+    
+    </div> <!-- pusher -->
+    
+
+    
+<!-- Cannot make async calls for jQuery or Semantic. Breaks Cards, Page Bar, others. -->
+<script src="//dn-fdzhcdn.qbox.me/jquery.min.js"></script>
+<script src="//dn-fdzhcdn.qbox.me/semantic.min.js"></script>
+<script type='text/javascript' src='/js/jquery.particleground.min.js'></script>
+<script type='text/javascript' src='/js/cool.js'></script>
+<script language=javascript>
+function google() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://cn.bing.com/search?q=site:fdzh.org ' + q.value;
+        if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
+            location.href = url;
+        } else {
+            window.open(url, "_blank");
+        }
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+
+
+
+    <script>
+    $(document).ready(function() {
+    
+      $(".time").text(function (index, value) {
+        return Math.round(parseFloat(value));
+      });
+      
+    });
+    </script>
+    
+   
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"171.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+ 
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47480129-12', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+ </body>
+
+</html>

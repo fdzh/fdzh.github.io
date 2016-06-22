@@ -41,5 +41,6 @@ $ reboot
 {% endraw  %}
 {% endhighlight %}
 
+[点此查看常见问题](https://github.com/FZUG/repo/wiki/Sogou-Pinyin-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
 感谢 [1dot75cm](http://cm.fdzh.org) 为 [Fedora中文社区软件源](http://repo.fdzh.org) 打包了该软件。

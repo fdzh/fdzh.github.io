@@ -4,7 +4,7 @@ author: tvvocold
 category: slides
 title:  Linux 发行版是什么，它又与Linux内核有什么联系？  
 tags: lfs101x Linux家族          
-image: http://7o51u6.com1.z0.glb.clouddn.com/49d503bf47879ffe8a169dd81c744d83_b.jpg
+image: https://dn-copr.qbox.me/49d503bf47879ffe8a169dd81c744d83_b.jpg
 ---
 
 Linux 发行版是什么，它又与Linux内核有什么联系？

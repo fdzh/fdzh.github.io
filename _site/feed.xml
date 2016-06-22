@@ -5,9 +5,160 @@
     <description></description>
     <link>http://www.fdzh.org/</link>
     <atom:link href="http://www.fdzh.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 22 Nov 2015 01:17:56 +0800</pubDate>
-    <lastBuildDate>Sun, 22 Nov 2015 01:17:56 +0800</lastBuildDate>
+    <pubDate>Wed, 22 Jun 2016 10:13:03 +0800</pubDate>
+    <lastBuildDate>Wed, 22 Jun 2016 10:13:03 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Fedora 24 正式发布</title>
+        <description>&lt;p&gt;The Fedora Project 正式宣布发布 Fedora 24，你可以在 &lt;a href=&quot;https://getfedora.org&quot;&gt;Fedora 官网&lt;/a&gt; 下载。&lt;/p&gt;
+
+&lt;h4 id=&quot;fedora-&quot;&gt;Fedora 之旅的另一步&lt;/h4&gt;
+&lt;p&gt;The Fedora Project 开始与一段伟大的旅程…重新定义一款适用于普通用户和开发者的操作系统。
+这个系统不是一天建成的， Fedora 24 是在这个旅程的一步。但这并不意味着这是一个“临时”的版本释出；这个版本为 Fedora 用户准备很多强大的新功能。&lt;/p&gt;
+
+&lt;h4 id=&quot;workstation-&quot;&gt;Workstation 工作站版本&lt;/h4&gt;
+
+&lt;p&gt;Fedora 24 工作站版本更新到 GNOME 3.20, 与许多可用性改进，如更易用的输入设备和打印机设置，更友好的搜索界面，键盘命令的快捷窗口，更方便的音乐控制系统。&lt;/p&gt;
+
+&lt;p&gt;Flatpak (前身为 xdg-app) 是另一种内嵌功能，是软件可以追踪 Flatpaks 并添加更多的功能，将来随着技术的发展。该软件也增加了功能，以提供一个完整的系统，直接从桌面从一个版本的到下一个 Fedora，并提供标签以及升级了现有软件的评论功能。&lt;/p&gt;
+
+&lt;p&gt;Fedora 24 继续着 X 的替代品, Wayland, 新一代的图形堆栈的工作。 尽管这个版本不会默认使用 Wayland，但它包括了许多改进，可以作为用户一个选项来尝试，并有望在 Fedora 25 正式启用。&lt;/p&gt;
+
+&lt;h4 id=&quot;server-&quot;&gt;Server 服务器版本&lt;/h4&gt;
+
+&lt;p&gt;Fedora 24 的 Server 版本更精简了，引入了更多的模块，这将成为未来的 Fedora 版本中的一个重要因素，甚至如不必要的包被拆除，并安装时一个更小的 footprint。 &lt;/p&gt;
+
+&lt;p&gt;FreeIPA 4.3 是 Fedora 24 服务器版本的一大特色。 FreeIPA 是一个安全信息管理解决方案的集成。该新版 FreeIPA 的功能简化了副本安装和改进了复制技术的管理。&lt;/p&gt;
+
+&lt;h4 id=&quot;cloud-&quot;&gt;Cloud 云版本&lt;/h4&gt;
+
+&lt;p&gt;Fedora 正致力于成为管理集装箱应用的最佳平台，从基础的 Fedora 容器镜像，到一个全功能的平台即服务的形式来运行和管理它们。&lt;/p&gt;
+
+&lt;p&gt;随着我们在征程上的前行，我们正在包装 OpenShift Origin，使其更容易部署。 OpenShift Origin 是一个围绕 Kubernetes 的平台即服务，生产级容器编排项目服务体系。 OpenShift Origin 致力于应用开发和部署优化。 Origin 可以让开发人员很容易地开始构建在容器中的应用程序和运营商，并管理它们。&lt;/p&gt;
+
+&lt;h4 id=&quot;spins-and-labs&quot;&gt;Spins and Labs&lt;/h4&gt;
+&lt;p&gt;Fedora Spins and Labs 是提供了定制化的 Fedora 版本。Fedora 24 Labs Spins，涵盖了基于 Fedora 的 KDE Plasma, Xfce, LXDE, Mate-Compiz, 和 Cinnamon 发行版。Fedora Labs 提供了特殊用途的 Fedora 版本，如游戏，机器。&lt;/p&gt;
+
+&lt;h4 id=&quot;arm&quot;&gt;ARM&lt;/h4&gt;
+&lt;p&gt;本次早产释出了 ARM image，此外，桌面系统如 Spins 和 Workstation 也提供了 image 下载。最小化的 image 为你的 ARM 板提供了很多尽可能多的功能下载可选项。&lt;/p&gt;
+
+&lt;h4 id=&quot;fedora--1&quot;&gt;让 Fedora 越来越好&lt;/h4&gt;
+
+&lt;p&gt;如果你想为 Fedora 做出贡献， 有很多角色你可以参加。访问 http://whatcanidoforfedora.org/ 看看吧！&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 22 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2016/06/22/fedora-24/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2016/06/22/fedora-24/</guid>
+        
+        <category>fedora-24</category>
+        
+        <category>top</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Fedora 24 Beta 发布</title>
+        <description>&lt;p&gt;Fedora 24 Beta 已于 2016年 5月 10日发布。该版本更新 glibc 至 2.23，更新编译器至 GCC 6，更新 GNOME 3.20，并包含许多安全更新和 Bug 修复。喜欢使用新版本的用户，可以使用以下方式升级系统。&lt;/p&gt;
+
+&lt;h2 id=&quot;dnf-system-upgrade-&quot;&gt;使用 DNF system upgrade 插件升级&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf update --refresh  &lt;span class=&quot;c&quot;&gt;# 更新系统&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf install dnf-plugin-system-upgrade  &lt;span class=&quot;c&quot;&gt;# 安装插件&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf system-upgrade download --refresh --releasever&lt;span class=&quot;o&quot;&gt;=[&lt;/span&gt;23&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;24&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rawhide&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# 下载包&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf system-upgrade reboot  &lt;span class=&quot;c&quot;&gt;# 重启执行升级操作&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;如果某些依赖不满足，升级将终止，可添加 &lt;code&gt;--allowerasing&lt;/code&gt; 选项跳过。这可能是第三方源还未进行更新。建议卸载这些依赖不满足的包。添加 &lt;code&gt;--best&lt;/code&gt; 选项，可查看依赖问题的详细信息。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;升级后操作&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;更新系统配置文件：&lt;br /&gt;
+更新后，RPM将备份配置文件。搜索 &lt;code&gt;.rpmnew&lt;/code&gt;(新配置) &lt;code&gt;.rpmsave&lt;/code&gt;(旧配置)，根据需要进行修改。或使用 &lt;code&gt;rpmconf&lt;/code&gt; 工具进行处理。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo rpmconf -a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;清理旧软件包：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf repoquery --unsatisfied  &lt;span class=&quot;c&quot;&gt;# 列出依赖问题的包，可以酌情删除这些包&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf repoquery --duplicated   &lt;span class=&quot;c&quot;&gt;# 列出重复的包，一般的包不会有重复存在&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf list extras  &lt;span class=&quot;c&quot;&gt;# 列出已从源中删除的包，可能包含第三方源的包&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf autoremove   &lt;span class=&quot;c&quot;&gt;# 删除不需要的包&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;注意：DNF 不需要一个包，是根据您是否明确要求安装它来决定的。这不意味着这个包是无用的。您需要删除您确实不需要的包。注意，&lt;code&gt;PackageKit&lt;/code&gt; 有个已知的 Bug，它并不标记包是用户安装。如果您使用 &lt;code&gt;PackageKit&lt;/code&gt;（或 &lt;code&gt;GNOME Software&lt;/code&gt;, &lt;code&gt;Apper&lt;/code&gt; 等）安装包，则这些包可能会列出，甚至会包含重要的应用程序和系统软件包，务必要十分小心。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;解决升级后的问题&lt;/h3&gt;
+&lt;p&gt;如果您升级后，系统有问题，可能需要以下步骤。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重建RPM数据库：&lt;br /&gt;
+如果您使用RPM/DNF工具时出现警告，可能需要重建RPM数据库。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo rpm --rebuilddb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用 &lt;code&gt;distro-sync&lt;/code&gt; 解决依赖问题： &lt;br /&gt;
+&lt;code&gt;system upgrade&lt;/code&gt; 工具默认使用 &lt;code&gt;distro-sync&lt;/code&gt; 升级系统。如果您的系统有些未升级的包有依赖问题，可手动执行 &lt;code&gt;distro-sync&lt;/code&gt;。这会同步源的软件包（某些包会降级）。
+ %}&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf distro-sync
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo dnf distro-sync --allowerasing  &lt;span class=&quot;c&quot;&gt;# 允许删除依赖损坏的包，务必进行确认&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重新标记 SELinux 标签： &lt;br /&gt;
+如果某些行为被禁止并收到 SELinux 警告，可能有些文件标签不正确。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo touch /.autorelabel
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;reboot&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;手动升级&lt;/h2&gt;
+
+&lt;h3 id=&quot;fc24&quot;&gt;升级至 fc24&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# systemctl isolate multi-user.target  # 切换至 TUI&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf upgrade&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf clean all&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf distro-sync --releasever=24 --setopt=deltarpm=false \&lt;/span&gt;
+  --disablerepo&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt; --enablerepo&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;fedora --enablerepo&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;updates --nogpgcheck
+&lt;span class=&quot;c&quot;&gt;# touch /.autorelabel&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;建议清理 &lt;code&gt;/var/cache/yum&lt;/code&gt;, &lt;code&gt;/var/cache/dnf&lt;/code&gt;, &lt;code&gt;/var/cache/mock&lt;/code&gt;, &lt;code&gt;/var/lib/mock&lt;/code&gt; 等目录。&lt;/p&gt;
+
+&lt;h3 id=&quot;rawhide&quot;&gt;升级至 Rawhide&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# dnf upgrade&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf install dnf-plugins-core fedora-repos-rawhide&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf config-manager --set-disabled fedora updates updates-testing&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf config-manager --set-enabled rawhide&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf clean -q dbcache plugins metadata&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dnf distro-sync --releasever=rawhide --setopt=deltarpm=false --nogpgcheck&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# touch /.autorelabel&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;参考：&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fedoraproject.org/wiki/Upgrading&quot;&gt;Upgrading&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fedoraproject.org/wiki/DNF_system_upgrade&quot;&gt;DNF system upgrade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 11 May 2016 00:00:00 +0800</pubDate>
+        <link>http://www.fdzh.org/blog/2016/05/11/fedora-24-beta/</link>
+        <guid isPermaLink="true">http://www.fdzh.org/blog/2016/05/11/fedora-24-beta/</guid>
+        
+        <category>Fedora-24</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>迟到的万圣节大餐 － Fedora 23 正式发布！</title>
@@ -59,8 +210,6 @@
         <pubDate>Wed, 04 Nov 2015 00:00:00 +0800</pubDate>
         <link>http://www.fdzh.org/blog/2015/11/04/fedora-23-released/</link>
         <guid isPermaLink="true">http://www.fdzh.org/blog/2015/11/04/fedora-23-released/</guid>
-        
-        <category>top</category>
         
         <category>fedora-23</category>
         
@@ -199,6 +348,8 @@ staff_u:unconfined_r:unconfined_t:s0-s0:c0.c1023&lt;/code&gt;&lt;/pre&gt;&lt;/di
 &lt;p&gt;3, 重启&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;reboot&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/FZUG/repo/wiki/Sogou-Pinyin-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98&quot;&gt;点此查看常见问题&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;感谢 &lt;a href=&quot;http://cm.fdzh.org&quot;&gt;1dot75cm&lt;/a&gt; 为 &lt;a href=&quot;http://repo.fdzh.org&quot;&gt;Fedora中文社区软件源&lt;/a&gt; 打包了该软件。&lt;/p&gt;
 </description>
@@ -482,84 +633,6 @@ init处理挂载并转到最终的、也是真正的根文件系统下。如果�
         <category>lfs101x</category>
         
         <category>Linux家族</category>
-        
-        
-        <category>slides</category>
-        
-      </item>
-    
-      <item>
-        <title>中文版Linux导论 (Edx courses LFS101x）翻译并招募志愿者ing</title>
-        <description>&lt;p&gt;LFS101x 是 Linux 基金会录制的 Linux 入门教程，，Linus 本人也推荐过。对新手了解 Linux 社区，安装使用 Linux 大有帮助，可惜视频全英文且由 utube 托管，对国内新手很不”友好”，所以我们开启翻译并传播该教程的活动，欢迎大家参加！&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;如何加入？&lt;/h2&gt;
-&lt;p&gt;加入我们的&lt;a href=&quot;https://groups.google.com/forum/#!forum/edxstar&quot;&gt;邮件列表&lt;/a&gt; 或&lt;a href=&quot;https://github.com/fdzh/LFS101x/wiki/CheckIn&quot;&gt;点此&lt;/a&gt;报名&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/fdzh/LFS101x/wiki/%E7%BF%BB%E8%AF%91%E6%96%87%E4%BB%B6&quot;&gt;翻译文件/流程&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;pr&quot;&gt;欢迎提交 PR&lt;/h2&gt;
-&lt;p&gt;参见 &lt;a href=&quot;https://github.com/tvvocold/LFS101x-Introduction-to-Linux-in-Chinese/wiki&quot;&gt;WiKi&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Jun 2015 00:00:00 +0800</pubDate>
-        <link>http://www.fdzh.org/blog/2015/06/20/lfs101/</link>
-        <guid isPermaLink="true">http://www.fdzh.org/blog/2015/06/20/lfs101/</guid>
-        
-        <category>LFS101x</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>F6a 星系漫游指南</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;Hi！你是刚到 F6a (Fedora) 超新星的新人（类）？ 你是刚接触 Fedora 的新手？ 你有棘手的问题需要帮忙（你需要搭车）？ &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;f6ahttpfzuggithubiomembers-&quot;&gt;这一切都交给&lt;a href=&quot;http://fzug.github.io/members&quot;&gt; F6a超新星人&lt;/a&gt; 吧!&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;欢迎登陆 &lt;strong&gt;&lt;a href=&quot;http://hack.fdzh.org&quot;&gt;Hack&lt;/a&gt;&lt;/strong&gt;，在 &lt;a href=&quot;http://hack.fdzh.org/ask&quot;&gt;/ask&lt;/a&gt; 板块提交你的问题，或者回答他人的问题！&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;我们欢迎阁下在 &lt;strong&gt;&lt;a href=&quot;http://hack.fdzh.org&quot;&gt;Hack&lt;/a&gt;&lt;/strong&gt; 上发布有趣的业界新闻/小道消息。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;通过简单易用的 &lt;strong&gt;&lt;a href=&quot;https://copr.fdzh.org/&quot;&gt;Copr&lt;/a&gt;&lt;/strong&gt; 构建系统，只需选择系统/架构并提供 srpm，其它交给 Copr 即可。我们还为您提供了简单易用的&lt;strong&gt;&lt;a href=&quot;http://repo.fdzh.org/&quot;&gt;软件源&lt;/a&gt;&lt;/strong&gt;！
-)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;您还可以在我们的 &lt;strong&gt;&lt;a href=&quot;http://slides.fdzh.org&quot;&gt;Slides&lt;/a&gt;&lt;/strong&gt; 上制作基于 Gist 的泡泡糖，是不是很酷?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;有大段代码（文章）需要粘贴？使用我们的 &lt;strong&gt;&lt;a href=&quot;http://p.fdzh.org&quot;&gt;Pastebin&lt;/a&gt;&lt;/strong&gt;。甚至制作自己的 &lt;strong&gt;&lt;a href=&quot;http://fdzh.ga&quot;&gt;短网址&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;我们接受任何人的 &lt;strong&gt;&lt;a href=&quot;https://github.com/fdzh/fdzh.github.io/wiki&quot;&gt;投稿&lt;/a&gt;&lt;/strong&gt;，让好东西不再埋没！&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;有空的话，来 &lt;strong&gt;&lt;a href=&quot;http://irc.fdzh.org/&quot;&gt;社区 IRC 在线聊天室&lt;/a&gt;&lt;/strong&gt;逛逛，看看谁在那儿?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;这一切都是&lt;strong&gt;永久免费，自由使用的&lt;/strong&gt;！&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;还等什么？赶快登陆我们的 &lt;strong&gt;&lt;a href=&quot;http://hack.fdzh.org&quot;&gt;F6a超新星&lt;/a&gt;&lt;/strong&gt; 吧！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;good-luck--have-fun&quot;&gt;Good Luck &amp;amp; Have Fun！&lt;/h2&gt;
-
-</description>
-        <pubDate>Mon, 01 Jun 2015 00:00:00 +0800</pubDate>
-        <link>http://www.fdzh.org/slides/2015/06/01/f6a/</link>
-        <guid isPermaLink="true">http://www.fdzh.org/slides/2015/06/01/f6a/</guid>
-        
-        <category>f6a</category>
         
         
         <category>slides</category>
